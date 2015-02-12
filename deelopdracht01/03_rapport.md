@@ -46,6 +46,12 @@
 
 * Oplossing:
 
+
+
+	* Een gemotiveerde keuze van het meest geschikte netwerkadres:
+
+		* Gezien we in het totaal 530 host-adressen nodig hebben, plus nog de bijhorende netwerkadressen en broadcastadressen van 5 subnetwerken, hebben we iets groter dan een type C nodig wat maar plaats heeft voor 512 adressen in totaal. De logische keuze is dus het tweede adres, namelijk 172.16.0.0/16, een type B adres. Dit is het goedkoopste om te gebruiken en voldoet nog ruimschoots aan onze requirements. Ook is er ook nog voldoende ruimte voor eventuele uitbreidingen in het netwerk.
+	
 	* De gedetailleerde onderverdeling in subnetten volgens VLSM.
 
 | Nr. | Naam      | Netwerkadres | Subnetmask      | CIDR | 1e hostadres | Laatste hostadres | Broadcastadres |
@@ -55,7 +61,3 @@
 |  2  | Directie  | 172.16.0.16  | 255.255.255.240 |  \4  | 172.16.0.17  | 172.16.0.30       | 172.16.0.31    |
 |  3  | Admin     | 172.16.0.32  | 255.255.255.224 |  \5  | 172.16.0.33  | 172.16.0.62       | 172.16.0.63    |
 |  4  | Personeel | 172.16.2.0   | 255.255.254.0   |  \9  | 172.16.2.1   | 172.16.3.254      | 172.16.3.255   |
-
-	* Een gemotiveerde keuze van het meest geschikte netwerkadres:
-
-	Gezien we in het totaal 530 host-adressen nodig hebben, plus nog de bijhorende netwerkadressen en broadcastadressen van 5 subnetwerken, hebben we iets groter dan een type C nodig wat maar plaats heeft voor 512 adressen in totaal. De logische keuze is dus het tweede adres, namelijk 172.16.0.0/16, een type B adres. Dit is het goedkoopste om te gebruiken en voldoet nog ruimschoots aan onze requirements. Ook is er ook nog voldoende ruimte voor eventuele uitbreidingen in het netwerk.
