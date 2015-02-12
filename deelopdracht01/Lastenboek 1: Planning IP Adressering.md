@@ -12,8 +12,7 @@
 
        • Opgave van het totaal aantal te voorziene hosts
 
-       • (Gemotiveerde) keuze van het meest geschikte netwerkadres:
-         – 192.168.1.0/24
+       • (Gemotiveerde) keuze van het meest geschikte netwerkadres
 
 ### Deeltaken
 
