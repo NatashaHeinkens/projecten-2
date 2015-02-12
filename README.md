@@ -4,10 +4,10 @@
 
 | Naam     | GitHub gebruikersnaam                   |
 | :---     | :---                                    |
-| student1 | [student1](https://github.com/student1) |
-| student2 | [student2](https://github.com/student2) |
-| student3 | [student3](https://github.com/student3) |
-| student4 | [student4](https://github.com/student4) |
+| Natasha Heinkens | [NatashaHeinkens](https://github.com/NatashaHeinkens) |
+| Robbe Van Daele | [RvanDaele92](https://github.com/RvanDaele92) |
+| Birgitta Croux | [birgitcroux](https://github.com/birgitcroux) |
+| Hans Meuris | [HansMeuris](https://github.com/HansMeuris) |
 
 ## Gebruikte tools
 
