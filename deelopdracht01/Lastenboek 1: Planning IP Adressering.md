@@ -36,9 +36,7 @@
 ###Taak 2:
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
-| Natasha Heinkens |   1 uur      |              |
 | Robbe Van Daele |   30 min      |              |
-| Birgitta Croux |    30 min     |              |
 | Hans Meuris |    45 min     |              |
 
 ###Testen:
