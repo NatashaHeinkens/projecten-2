@@ -12,4 +12,4 @@
 ## Gebruikte tools
 
 * Kanban-bord: https://huboard.com/HoGentTIN/ops-g-07/
-* Tijdregistratie: http://toggl.com/
+* Tijdregistratie: https://www.toggl.com/app/projects/820085/list/page/1
