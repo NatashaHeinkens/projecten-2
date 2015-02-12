@@ -35,8 +35,8 @@
 ###Taak 2:
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
-| Robbe Van Daele |   30 min      |              |
-| Hans Meuris |    45 min     |              |
+| Robbe Van Daele |   30 min      |     40 min    |
+| Hans Meuris |    45 min     |     40 min     |
 
 ###Testen:
 | Student  | Geschat | Gerealiseerd |
