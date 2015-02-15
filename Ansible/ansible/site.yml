@@ -1,0 +1,12 @@
+# site.yml
+---
+- hosts: Proj15
+  vars:
+    dbname: naamTest
+    dbuser: userTest
+    dbpasswd: passTest
+  sudo: true
+  roles:
+    - common
+    - web
+    - db
