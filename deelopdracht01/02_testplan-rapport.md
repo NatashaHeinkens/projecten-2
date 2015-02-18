@@ -22,6 +22,7 @@ Testen op te zetten in Packet Tracer
 Uitvoerder test: Birgitta Croux
 
 1. Netwerktopologie opzetten: zie test_ipplanning.pkt
+   ![alt text] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht01/testrapport_netwerktopologie.png "netwerktopologie")
 2. Configuratie  
    Bedrijfsrouter 1
    ```
