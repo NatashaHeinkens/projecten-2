@@ -21,6 +21,9 @@
 # If you run on *Windows*, you should also add the host names to
 # `ansible/inventory_dev`
 ---
-- name: Proj15
+- name: Proj15LAMP
   ip: 192.168.56.10
+  
+- name: Proj15JEE
+  ip: 192.168.56.11
 

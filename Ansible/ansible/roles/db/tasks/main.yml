@@ -1,7 +1,7 @@
 ---
 # file db/tasks/main.yml
 - name: Install MySQL
-  yum: pkg={{item}} state=installed
+  yum: pkg={{item}} state=latest
   with_items:
     - mariadb
     - mariadb-server

@@ -1,45 +1,31 @@
-[B]<font color='"Red"'>TEST</font>[/B]
-<?php error_reporting(-1); ?>
-<?php ini_set('display_errors', true); ?>
 <?php
-$servname = "localhost";
-$dabaname = "naamTest";
+$servername = "localhost";
 $username = "userTest";
 $password = "passTest";
+$dbname = "naamTest";
 
-
-echo "Testbestand om werking http, php en db te controleren";
 try {
-    $conn = new PDO("mysql:host=$servname;dbname=$dabaname", $username, $password);
-    //Errors in exceptions veranderen
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO_ERRMODE_EXCEPTION);
-    echo "Connected successfully  <br>";
-    
-    //Testtabel maken
-    $sql = "CREATE TABLE Test (iets VARCHAR(10))"
-    $conn->exec($sql);
-    echo "Table created successfully <br>";
-    //Data in testtabel steken
-    $sql = "INSERT INTO Test VALUES ('TEST')";
-    $conn->exec($sql);
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    //Data uitlezen
-    $sql = "SELECT * FROM Test";
-    $result = $conn->query($sql);
-    if ($result->num_rows > 0) {
-        echo "Data gevonden, Alles okay!";
-        }
+    // sql to create table
+    $sql = "CREATE TABLE MyGuests (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    firstname VARCHAR(30) NOT NULL,
+    lastname VARCHAR(30) NOT NULL,
+    email VARCHAR(50),
+    reg_date TIMESTAMP
+    )";
+
+    // use exec() because no results are returned
+    $conn->exec($sql);
+    echo "Table MyGuests created successfully";
     }
-catch(PDOException $e) {
-    echo "dbFOUT:<br>" . $e->getMessage();
+catch(PDOException $e)
+    {
+    echo "ERROR: " . $sql . "<br>" . $e->getMessage();
     }
-catch(Exception $ e) {
-    echo "miscFOUT:<br>" . e->getMessage();
-    }
-finally {
-    echo "einde bereikt"
-    //Connectie sluiten
-    $conn=null;
-    }
-echo "buiten try/catch/finally blok";
-?>
+
+$conn = null;
+?> 
