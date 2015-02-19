@@ -57,7 +57,7 @@
 
 ## Waar hebben jullie nog problemen mee?
 
-* Ansible werkt niet op Mac Hannes
+* Ansible werkt niet op Mac Hans
 
 ## Feedback technisch luik
 
