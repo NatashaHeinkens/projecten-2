@@ -72,6 +72,8 @@
   - Taak 2 **niet ok**
     - Bepaal subnetten in dalende volgorde van benodigd aantal hosts
     - CIDR-notatie = # bits in *netwerk*deel
+    - Uitgewerkt in PacketTracer: goed!
+    - Intussen opgelost! 
 - Deelopdracht 2:
   - Begonnen met Vagrant + Ansible, ahv [ansible-skeleton](https://github.com/bertvv/ansible-skeleton)
   - LAMP-stack met PHP-applicatie en DB-connectie (zelf geschreven)
