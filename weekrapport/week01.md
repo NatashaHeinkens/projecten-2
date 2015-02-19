@@ -14,24 +14,24 @@
 
 ### Algemeen
 
-[Afbeelding huidige toestand Kanban-bord(en) invoegen]
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week01_files/huboard.png "kanban")
 
 * ...
 * ...
 
-[Afbeelding teamoverzicht tijdregistratie onderverdeeld per deelopdracht]
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week01_files/week01_overzicht.png "teamoverzicht")
 
 ### Natasha Heinkens
 
 * ...
 
-[Afbeelding individueel rapport tijdregistratie]
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week01_files/week01_natasha.png "natasha")
 
 ### Robbe Van Daele
 
 * ...
 
-[Afbeelding individueel rapport tijdregistratie]
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week01_files/week01_robbe.png "robbe")
 
 ### Birgit Croux
 
@@ -45,7 +45,7 @@
 
 * ...
 
-[Afbeelding individueel rapport tijdregistratie]
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week01_files/week01_hans.png "hans")
 
 ## Wat plan je volgende week te doen?
 
