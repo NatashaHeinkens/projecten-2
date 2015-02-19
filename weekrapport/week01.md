@@ -1,13 +1,13 @@
 # Voortgangsrapport week 01
 
 * Groep: g07
-* Datum:
+* Datum: 18/02/15
 
 | Student  | Aanw. | Opmerking |
 | :---     | :---  | :---      |
 | Natasha Heinkens |       |           |
 | Robbe Van Daele |       |           |
-| Birgitta Croux |       |           |
+| Birgit Croux |       |           |
 | Hans Meuris |       |           |
 
 ## Wat heb je deze week gerealiseerd?
@@ -33,11 +33,13 @@
 
 [Afbeelding individueel rapport tijdregistratie]
 
-### Birgitta Croux
+### Birgit Croux
 
-* ...
+* ingewerkt in project: github verkennen, markdown, projectbrochure,...
+* testplan en -rapport voor deelopdracht 1
+* opzoekings- en leeswerk voor deelopdracht 2: vagrant (en win server boxen), packer, chocolatey, mogelijkheden voor deployment van wisa + app en hoe deze combineren met developmentomgeving 
 
-[Afbeelding individueel rapport tijdregistratie]
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week01_files/week01_birgit.png "birgit croux")
 
 ### Hans Meuris
 
@@ -50,7 +52,7 @@
 ### Algemeen
 ### Natasha Heinkens
 ### Robbe Van Daele
-### Birgitta Croux
+### Birgit Croux
 ### Hans Meuris
 
 ## Waar hebben jullie nog problemen mee?
@@ -64,7 +66,7 @@
 
 ### Natasha Heinkens
 ### Robbe Van Daele
-### Birgitta Croux
+### Birgit Croux
 ### Hans Meuris
 
 ## Feedback analyseluik
@@ -73,6 +75,6 @@
 
 ### Natasha Heinkens
 ### Robbe Van Daele
-### Birgitta Croux
+### Birgit Croux
 ### Hans Meuris
 
