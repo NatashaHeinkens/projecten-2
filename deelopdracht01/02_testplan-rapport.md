@@ -30,22 +30,22 @@ Uitvoerder test: Birgitta Croux
    hostname Bedrijfsrouter1
    !
    interface GigabitEthernet0/0
-   ip address 172.16.0.17 255.255.255.240
+   ip address 172.16.2.33 255.255.255.240
    duplex auto
    speed auto
    !
    interface GigabitEthernet0/1
-   ip address 172.16.0.33 255.255.255.224
+   ip address 172.16.2.1 255.255.255.224
    duplex auto
    speed auto
    !
    interface Serial0/0/0
-   ip address 172.16.0.6 255.255.255.252
+   ip address 172.16.2.50 255.255.255.252
    clock rate 2000000
    !
-   ip route 172.16.2.0 255.255.254.0 172.16.0.5 
-   ip route 172.16.0.0 255.255.255.252 172.16.0.5 
-   ip route 0.0.0.0 0.0.0.0 172.16.0.1 
+   ip route 172.16.0.0 255.255.254.0 172.16.2.49 
+   ip route 172.16.2.52 255.255.255.252 172.16.2.49 
+   ip route 0.0.0.0 0.0.0.0 172.16.2.53  
    !
    ```
    
@@ -55,20 +55,20 @@ Uitvoerder test: Birgitta Croux
    hostname Bedrijfsrouter2
    !
    interface GigabitEthernet0/0
-   ip address 172.16.2.1 255.255.254.0
+   ip address 172.16.0.1 255.255.254.0
    duplex auto
    speed auto
    !
    interface Serial0/0/0
-   ip address 172.16.0.2 255.255.255.252
+   ip address 172.16.2.54 255.255.255.252
    clock rate 2000000
    !
    interface Serial0/0/1
-   ip address 172.16.0.5 255.255.255.252
+   ip address 172.16.2.49 255.255.255.252
    !
-   ip route 172.16.0.16 255.255.255.240 172.16.0.6 
-   ip route 172.16.0.32 255.255.255.224 172.16.0.6 
-   ip route 0.0.0.0 0.0.0.0 172.16.0.1 
+   ip route 172.16.2.32 255.255.255.240 172.16.2.50 
+   ip route 172.16.2.0 255.255.255.224 172.16.2.50 
+   ip route 0.0.0.0 0.0.0.0 172.16.2.53 
    !
    ```
    
@@ -78,12 +78,9 @@ Uitvoerder test: Birgitta Croux
    hostname ToISP
    !
    interface Serial0/0/1
-   ip address 172.16.0.1 255.255.255.252
+   ip address 172.16.2.53 255.255.255.252
    !
-   ip route 172.16.0.4 255.255.255.252 172.16.0.2 
-   ip route 172.16.2.0 255.255.254.0 172.16.0.2 
-   ip route 172.16.0.32 255.255.255.224 172.16.0.2 
-   ip route 172.16.0.16 255.255.255.240 172.16.0.2 
+   ip route 0.0.0.0 0.0.0.0 172.16.2.54
    !
    ```
    
@@ -91,9 +88,9 @@ Uitvoerder test: Birgitta Croux
    
    | Host           | IP          | Subnet Mask     | Default Gateway |
    | ----           | :--:        | :--:            | :--:            |
-   | Directie1      | 172.16.0.30 | 255.255.255.240 | 172.16.0.17     |
-   | Administratie1 | 172.16.0.62 | 255.255.255.224 | 172.16.0.33     |
-   | Personeel1     | 172.16.3.254| 255.255.254.0   | 172.16.2.1      |
+   | Directie1      | 172.16.2.46 | 255.255.255.240 | 172.16.2.33     |
+   | Administratie1 | 172.16.2.30 | 255.255.255.224 | 172.16.2.1      |
+   | Personeel1     | 172.16.1.254| 255.255.254.0   | 172.16.0.1      |
    
 3. Connectiviteit testen  
   * Ping naar default gateway: zie scenario's 1-3 test_ipplanning.pkt
