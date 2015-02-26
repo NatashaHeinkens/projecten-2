@@ -23,7 +23,9 @@
 
 ### Natasha Heinkens
 
-* ...
+* Initiatie project.
+* Opracht 1 afgerond.
+* Afspraken, overleg, research opdracht 2
 
 ![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week02_files/week02_natasha.png "natasha")
 
@@ -51,6 +53,8 @@
 
 ### Algemeen
 ### Natasha Heinkens
+* Uitwerking research opdracht 2
+* testplan opstellen opdracht 2
 ### Robbe Van Daele
 ### Birgit Croux
 ### Hans Meuris
