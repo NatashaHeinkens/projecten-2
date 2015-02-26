@@ -3,9 +3,15 @@ Het stappenplan is exact reproduceerbaar.
 
 2. Het opzetten van een VM is geautomatiseerd.
 
-3. De gebruikers hebben de juiste permissies*
+3. De gebruikers hebben de juiste permissies. (met minimale gebruikerspermissies)
 
-4. De firewall instellingen zijn optimaal *
+4. De firewall instellingen zijn optimaal. 
+  Windows firewall:
+  - Turn on Windows Firewall; aangevinkt(zowel bij 'Home or private network' en 'public location network')
+  - Notify me when Windows Firewall blocks a new program; aangevinkt (zowel bij 'Home or private network' en 'public location network')
+  - (*) alle benodigdheden ivm iis, asp.net, sql server zijn toegevoegd aan inbound rules (normaal gezien door windows zelf al rules aan toegevoegd)
+  Windows defender
+  - nog aan te vullen
 
 5. De VM heeft de minimale instalatie; windows server 2012, iis8, sql server, asp.net
 
