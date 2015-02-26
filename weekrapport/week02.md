@@ -14,24 +14,24 @@
 
 ### Algemeen
 
-![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week01_files/huboard.png "kanban")
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week02_files/huboard.png "kanban")
 
 * ...
 * ...
 
-![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week01_files/week01_overzicht.png "teamoverzicht")
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week02_files/week02_overzicht.png "teamoverzicht")
 
 ### Natasha Heinkens
 
 * ...
 
-![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week01_files/week01_natasha.png "natasha")
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week02_files/week02_natasha.png "natasha")
 
 ### Robbe Van Daele
 
 * ...
 
-![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week01_files/week01_robbe.png "robbe")
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week02_files/week02_robbe.png "robbe")
 
 ### Birgit Croux
 
@@ -39,13 +39,13 @@
 * testplan en -rapport voor deelopdracht 1
 * opzoekings- en leeswerk voor deelopdracht 2: vagrant (en win server boxen), packer, chocolatey, mogelijkheden voor deployment van wisa + app en hoe deze combineren met developmentomgeving 
 
-![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week01_files/week01_birgit.png "birgit croux")
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week02_files/week02_birgit.png "birgit croux")
 
 ### Hans Meuris
 
 * ...
 
-![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week01_files/week01_hans.png "hans")
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week02_files/week02_hans.png "hans")
 
 ## Wat plan je volgende week te doen?
 
