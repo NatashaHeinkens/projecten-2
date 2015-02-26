@@ -44,7 +44,8 @@
 
 ### Hans Meuris
 
-* ...
+* Opdracht 3 gedetailleerd overlopen.
+* Gepoogd Ansible werkende te krijgen op zijn mac.
 
 ![Afbeelding individueel rapport tijdregistratie] ( https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week03_files/hans_week03.png "hans")
 
@@ -63,10 +64,13 @@
 * Indien mogelijk deployment uitproberen op Azure
 
 ### Hans Meuris
+* Deel taak opdracht 3 afwerken
+* Grondig overleggen en afspraken maken met Robbe omtrent opdracht 2 en deze dan ook uitvoeren.
 
 ## Waar hebben jullie nog problemen mee?
 
 * Technisch gedeelte van het testplan voor WISA-stack
+* Ansible werkt nog steeds niet op Mac van Hans.
 * ...
 
 ## Feedback technisch luik
