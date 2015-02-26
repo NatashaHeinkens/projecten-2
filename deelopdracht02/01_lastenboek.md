@@ -16,15 +16,15 @@
 ### Deeltaken
 
 1. 3x Testplan opstellen: LAMP, JavaEE, WISA
-2. Opzetten en configureren van LAMP stack
-  2a. Implementeren
-  2b. Security
+2. Opzetten en configureren van LAMP stack  
+  * 2a. Implementeren
+  * 2b. Security
 3. Opzetten en configureren van JavaEE Stack
-  3a. Implementeren
-  3b. Security
+  *  3a. Implementeren
+  *  3b. Security
 4. Opzetten en configureren van WISA Stack
-  4a. Implementeren
-  4b. Security
+  * 4a. Implementeren
+  * 4b. Security
 5. 3x productieomgeving opzetten: LAMP, JavaEE, WISA
 6. 3x handleiding voor de gebruiker
 7. 3x testen uitvoeren
@@ -107,7 +107,7 @@
 #### Taak 7: 3x testen uitvoeren
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
-| Natasha Heinkens |  9 uur              |              |
+| Natasha Heinkens |  15 uur              |              |
 | Robbe Van Daele |               |              |
 | Birgitta Croux |               |              |
 | Hans Meuris |               |              |
