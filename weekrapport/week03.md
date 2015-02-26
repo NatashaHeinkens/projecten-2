@@ -23,7 +23,8 @@
 
 ### Natasha Heinkens
 
-* ...
+* Via packer en vagrant windows server 2012 r2 proberen te installeren. (mislukt, loopt vast)
+* Voorlopig testplan opgesteld.
 
 ![Afbeelding individueel rapport tijdregistratie] ( https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week03_files/natasha_week03.png "natasha")
 
@@ -51,6 +52,9 @@
 
 ### Algemeen
 ### Natasha Heinkens
+* WISA, LAMP en JAVA ee zelf uitwerken adhv stappenplan en aanpassen waar nodig
+* Alle stappenplannen afwerken/optimaliseren
+* Deel taak opdracht 3 afwerken
 ### Robbe Van Daele
 ### Birgitta Croux
 
