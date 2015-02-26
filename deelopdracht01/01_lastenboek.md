@@ -20,10 +20,6 @@
 * Taak 2
 * Testen 
 
-### Kanban-bord
-
-(schermafbeeldingen van de toestand van het Kanban-bord invoegen elke week voor de samenkomst met de begeleider, tot oplevering van de opdracht)
-
 ### Tijdbesteding
 
 ###Taak 1:
@@ -42,6 +38,7 @@
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Robbe Van Daele |   1 uur 30 min      |              |
-| Birgitta Croux |    2 uur     |              |
+| Birgitta Croux |    2 uur     |     3:30 (corr. incl.)         |
 
-(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
+###Overzicht:
+![alt] ( https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht01/tijdsoverzicht_od01.png "totaal opdracht 1")
