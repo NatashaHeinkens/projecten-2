@@ -13,3 +13,7 @@
 
 * Kanban-bord: https://huboard.com/HoGentTIN/ops-g-07/
 * Tijdregistratie: https://www.toggl.com/app/projects/820085/list/page/1
+
+## Handige links
+
+* Markdown cheat-sheet: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists
