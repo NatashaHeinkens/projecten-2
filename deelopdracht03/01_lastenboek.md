@@ -15,7 +15,7 @@
 ### Deeltaken
 
 * Labo 1
-  * Testplan
+  * Testplan opstellen
   * Part 1: Access a Cisco switch through the serial console port
   * Part 2: Display and configure Basic Device Settings
   * Part 3: Access a Cisco Router using a mini-USB console cable
@@ -23,18 +23,21 @@
   * Demo opstellen met fysieke hardware
   * Verslag uitschrijven
 * Labo 2:
+  * Testplan opstellen
   * Part 1: Set Up the Network Topology (Ethernet only)
   * Part 2: Configure PC hosts
   * Part 3: Configure and Verify Basic Switch Settings
   * Demo opstellen met fysieke hardware
   * Verslag uitschrijven
 * Labo 3:
+  * Testplan opstellen
   * Part 1: Set Up Topology and Initialize Devices
   * Part 2: Configure Devices and Verify Connectivity
   * Part 3: Display Device Information
   * Demo opstellen met fysieke hardware
   * Verslag uitschrijven
 * Labo 4:
+  * Testplan opstellen
   * Task 1: Cable, Erase, and Reload the Routers
   * Task 2: Perform Basic Router Configuration
   * Task 3: Interpreting Debug Output
