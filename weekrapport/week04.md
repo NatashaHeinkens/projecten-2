@@ -24,7 +24,9 @@
 
 ### Natasha Heinkens
 
-* ...
+* Research gedaan over CSSM voor WISA-stack
+* deelopdracht 3 labo 1 opgestart
+* Research over java ee
 
 ![alt] ( https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week04_files/natasha_w04.png "natasha")
 
@@ -57,7 +59,9 @@
 
 ### Natasha Heinkens
 
-*
+* WISA testen 
+* Deelopdracht 3 labo 1 afgewerkt
+* LAMP en java ee testen en stappenplan volgen
 
 ### Robbe Van Daele
 
@@ -76,7 +80,7 @@
 ## Waar hebben jullie nog problemen mee?
 
 * Server errors IIS bij sommige testen m.b.v. applicaties uit Web III, niet duidelijk of dit aan de geïnstalleerde modules ligt of aan één of andere instelling.  
-* ...
+* Opzetten van de windows server adhv packer werkt niet bij Natasha, blijft hangen bij "waiting for SSH to become available"
 
 ## Feedback technisch luik
 
