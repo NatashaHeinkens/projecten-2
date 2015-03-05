@@ -30,7 +30,8 @@
 
 ### Robbe Van Daele
 
-* ...
+* Meevolgen op skype en helpen waar nuttig
+* Weinig meer wegens ziekte
 
 ![Afbeelding individueel rapport tijdregistratie] ( https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week03_files/robbe_week03.png "robbe")
 
