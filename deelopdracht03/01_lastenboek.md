@@ -55,6 +55,10 @@
   * Verslag uitschrijven
 * Checklist opstellen
 * Cheat sheet opstellen
+* Labo 1 testen
+* Labo 2 testen
+* Labo 3 testen
+* Labo 4 testen
 
 
 ### Kanban-bord
@@ -99,5 +103,33 @@
 | Robbe Van Daele |               |              |
 | Birgitta Croux |               |              |
 | Hans Meuris |               |              |
+
+(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
+
+#### Labo 1 testen
+| Student  | Geschat | Gerealiseerd |
+| :---     |    ---: |         ---: |
+| Hans Meuris |               |              |
+
+(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
+
+#### Labo 2 testen
+| Student  | Geschat | Gerealiseerd |
+| :---     |    ---: |         ---: |
+| Birgitta Croux |               |              |
+
+(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
+
+#### Labo 3 testen
+| Student  | Geschat | Gerealiseerd |
+| :---     |    ---: |         ---: |
+| Natasha Heinkens |       1u       |             |
+
+(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
+
+#### Labo 4 testen
+| Student  | Geschat | Gerealiseerd |
+| :---     |    ---: |         ---: |
+| Robbe Van Daele |               |              |
 
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
