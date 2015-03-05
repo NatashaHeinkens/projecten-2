@@ -31,7 +31,9 @@
 
 ### Robbe Van Daele
 
-* ...
+* Startup Project
+* Opdracht 1 gemaakt
+* Afspraken, overleg, begin opdracht 2
 
 ![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week02_files/week02_robbe.png "robbe")
 
