@@ -89,6 +89,16 @@
 ## Feedback technisch luik
 
 ### Algemeen
+* Feedback gegeven over testen connectiviteit in een netwerk => opdracht 1 nu compleet.
+* Afwerken opdracht 2 ipv. parallel opdracht 3 uitwerken => zo zullen er meer taken in "ready for next stage" terecht komen.
+* Lastenboek opdracht 2
+ * migratie naar cloud omgeving (bv. Azure) toevoegen bij deliverables
+ * deeltaken: testrapport toevoegen
+ * tijdbesteding aanvullen
+* Testplan/testrapport
+ * Een testplan is een checklist met de te testen zaken. Eigenlijk een gedetailleerde lijst van de resultaten en deelresultaten die jullie wensen te bereiken.
+ * Een testrapport is het al dan niet afvinken van die checklist (testplan) en hoe dit getest werd.
+ * Huidige testplannen voldoen niet aan de opzet van een checklist, testrapport ontbreekt.
 
 ### Natasha Heinkens
 ### Robbe Van Daele
