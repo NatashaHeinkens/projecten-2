@@ -59,7 +59,7 @@
 
 ### Kanban-bord
 
-(schermafbeeldingen van de toestand van het Kanban-bord invoegen elke week voor de samenkomst met de begeleider, tot oplevering van de opdracht)
+![alt] ( https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/huboard_do3.png "kanban do 3")
 
 ### Tijdbesteding
 
