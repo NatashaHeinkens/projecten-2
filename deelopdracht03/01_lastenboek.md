@@ -95,7 +95,7 @@
 #### Checklist opstellen
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
-| Natasha Heinkens |               |              |
+| Natasha Heinkens |       15 min        |      5 min        |
 | Robbe Van Daele |               |              |
 | Birgitta Croux |               |              |
 | Hans Meuris |               |              |
