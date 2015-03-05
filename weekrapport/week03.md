@@ -57,6 +57,8 @@
 * Alle stappenplannen afwerken/optimaliseren
 * Deel taak opdracht 3 afwerken
 ### Robbe Van Daele
+* Meevolgen op Skype en helpen waar nodig.
+* Weinig meer wegens ziekte
 ### Birgitta Croux
 
 * Configureren van MySQL (of SQL Server) vervolledigen
