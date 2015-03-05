@@ -30,8 +30,7 @@
 
 ### Robbe Van Daele
 
-* Meevolgen op skype en helpen waar nuttig
-* Weinig meer wegens ziekte
+* ...
 
 ![Afbeelding individueel rapport tijdregistratie] ( https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week03_files/robbe_week03.png "robbe")
 
@@ -54,12 +53,10 @@
 
 ### Algemeen
 ### Natasha Heinkens
-* WISA, LAMP en JAVA ee zelf uitwerken adhv stappenplan en aanpassen waar nodig
+* WISA, LAMP en JAVA ee zelf uitwerken adhv stappenplan en aanpassen waar nodig (testen documentatie)
 * Alle stappenplannen afwerken/optimaliseren
 * Deel taak opdracht 3 afwerken
 ### Robbe Van Daele
-* Meevolgen op Skype en helpen waar nodig.
-* Weinig meer wegens ziekte
 ### Birgitta Croux
 
 * Configureren van MySQL (of SQL Server) vervolledigen
@@ -78,9 +75,8 @@
 
 ## Feedback technisch luik
 
-* 
-
 ### Algemeen
+* Feedback samengevoegd met feedback in weekrapport 4.
 
 ### Natasha Heinkens
 ### Robbe Van Daele
