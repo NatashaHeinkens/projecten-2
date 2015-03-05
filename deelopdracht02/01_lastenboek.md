@@ -39,8 +39,6 @@
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |  2uur 30min              |              |
-| Robbe Van Daele |               |              |
-| Birgitta Croux |               |              |
 | Hans Meuris |               |              |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
@@ -76,14 +74,14 @@
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |     20 uur           |              |
-| Birgitta Croux |               |              |
+| Birgitta Croux |     20 uur          |              |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
 #### Taak 4b: Opzetten en configureren van WISA Stack- Security
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |      10 uur          |              |
-| Birgitta Croux |               |              |
+| Birgitta Croux |      5 uur         |              |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
 #### Taak 5: 3x productieomgeving opzetten: LAMP, JavaEE, WISA
@@ -91,7 +89,7 @@
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |      5 uur          |              |
 | Robbe Van Daele |               |              |
-| Birgitta Croux |               |              |
+| Birgitta Croux |       9 uur        |              |
 | Hans Meuris |               |              |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
@@ -100,7 +98,7 @@
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |  3 uur              |              |
 | Robbe Van Daele |               |              |
-| Birgitta Croux |               |              |
+| Birgitta Croux |     3 uur          |              |
 | Hans Meuris |               |              |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
@@ -109,6 +107,6 @@
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |  15 uur              |              |
 | Robbe Van Daele |               |              |
-| Birgitta Croux |               |              |
+| Birgitta Croux |      10 uur         |              |
 | Hans Meuris |               |              |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
