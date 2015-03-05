@@ -32,7 +32,9 @@
 
 ### Robbe Van Daele
 
-* ...
+* Nog steeds wegens ziekte weinig vóór de les
+* In de les: JEE opzoeken en installeren - automatiseren.
+* In de les: LAMP finetunen.
 
 
 ### Birgitta Croux
