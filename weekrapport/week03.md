@@ -6,7 +6,7 @@
 | Student  | Aanw. | Opmerking |
 | :---     | :---  | :---      |
 | Natasha Heinkens |  V     |           |
-| Robbe Van Daele |   A    |           |
+| Robbe Van Daele |   A    |   ziek, attest niet vergeten!        |
 | Birgitta Croux |       |           |
 | Hans Meuris |   V    |           |
 
@@ -74,6 +74,8 @@
 * ...
 
 ## Feedback technisch luik
+
+* 
 
 ### Algemeen
 
