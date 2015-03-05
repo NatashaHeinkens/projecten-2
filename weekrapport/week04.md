@@ -5,10 +5,10 @@
 
 | Student  | Aanw. | Opmerking |
 | :---     | :---  | :---      |
-| Natasha Heinkens |       |           |
-| Robbe Van Daele |       |           |
+| Natasha Heinkens |   V    |           |
+| Robbe Van Daele |   V    |           |
 | Birgitta Croux |       |           |
-| Hans Meuris |       |           |
+| Hans Meuris |   V    |           |
 
 ## Wat heb je deze week gerealiseerd?
 
