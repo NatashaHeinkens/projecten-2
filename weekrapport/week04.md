@@ -45,7 +45,8 @@
 
 ### Hans Meuris
 
-* ...
+* Ruw testplan LAMP-stack en Java EE
+* Grootste deel opdracht 3 lab 3 in Packet Tracer
 
 ![alt] ( https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week04_files/hans_w04.png  "hans")
 
@@ -75,7 +76,8 @@
 
 ### Hans Meuris
 
-*
+* opdracht 3 labo 3 afwerken
+* opdracht 3 testplan 4 maken
 
 ## Waar hebben jullie nog problemen mee?
 
