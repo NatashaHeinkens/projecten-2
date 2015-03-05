@@ -63,7 +63,36 @@
 
 ### Tijdbesteding
 
-#### Taak 1
+#### Labo 1
+| Student  | Geschat | Gerealiseerd |
+| :---     |    ---: |         ---: |
+| Natasha Heinkens |    5u           |              |
+
+(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
+
+#### Labo 2
+| Student  | Geschat | Gerealiseerd |
+| :---     |    ---: |         ---: |
+| Robbe Van Daele |               |              |
+
+
+(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
+
+#### Labo 3
+| Student  | Geschat | Gerealiseerd |
+| :---     |    ---: |         ---: |
+| Hans Meuris |               |              |
+
+(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
+
+#### Labo 4
+| Student  | Geschat | Gerealiseerd |
+| :---     |    ---: |         ---: |
+| Birgitta Croux |               |              |
+
+(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
+
+#### Checklist opstellen
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |               |              |
