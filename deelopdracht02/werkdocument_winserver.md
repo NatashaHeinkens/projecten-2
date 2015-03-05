@@ -34,11 +34,13 @@ Eigen iso gebruiken of windows updates overslaan: zie onderaan.
 6. Het resultaat: bestand windows_2012_r2_virtualbox.box in de folder packer-windows.
 
 **Als je je eigen iso wil gebruiken**
+
 1. Vervang in het bestand windows_2012_r2.json bij `iso_url` de link door het pad naar je iso
 2. Vervang in datzelfde bestand bij `iso_checksum` de string door de checksum voor je iso
 3. Vervang in Autounattend.xml (map answer_files) de tekst in de tag `<Key>` door jouw licentiesleutel en uncomment deze tag
 
 **Als je geen windows updates wil installeren**
+
 1. Uncomment in Autounattend.xml de sectie WITHOUT WINDOWS UPDATES (lijn 237 e.v.)
 2. Comment de sectie daaronder WITH WINDOWS UPDATES
 
@@ -67,6 +69,7 @@ Je kan de desktop van deze box oproepen met het commando `vagrant rdp`.
 Je kan de box afsluiten met: 
 * `vagrant suspend` (inhoud van het geheugen van de box wordt bijgehouden, dit neemt dus meer plaats in maar de box hervatten gaat wel sneller)
 * `vagrant halt` (dit sluit de virtuele machine gecontroleerd af)
+
 De box vernietigen doe je met `vagrant destroy` (alle provisionering gaat verloren, de volgende keer dat je `vagrant up` doet begint het hele proces van voorafaan)
 In de drie gevallen kan je de box opnieuw opstarten met `vagrant up`.
 
