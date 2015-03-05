@@ -1,6 +1,7 @@
 1. Het stappenplan volgen levert een werkende VM op, en via VirtualBox kan je mappen op het hostsysteem op een VM “mounten”. 
 Het stappenplan is exact reproduceerbaar.
-
+  - Het is mogelijk om een website op de server te plaatsen en draaiende te houden.
+  
 2. Het opzetten van een VM is geautomatiseerd.
 
 3. De gebruikers hebben de juiste permissies. (met minimale gebruikerspermissies)
