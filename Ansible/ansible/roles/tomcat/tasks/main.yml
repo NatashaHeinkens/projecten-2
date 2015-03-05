@@ -1,0 +1,24 @@
+---
+# file java/tasks/main.yml
+- name: Install tomcat
+  yum: pkg={{item}} state=latest
+  with_items:
+    - tomcat
+    - tomcat-webapps
+    - tomcat-admin-webapps
+    
+- name: Copy tomcat server.xml
+  template:
+    src: server.xml.j2
+    dest: /etc/tomcat/server.xml
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart tomcat
+  
+- name: Ensure tomcat is running
+  service:
+    name: tomcat
+    state: started
+    enabled: yes
+  when: tomcat_enabled

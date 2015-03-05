@@ -1,7 +1,7 @@
 ---
 # file update/tasks/main.yml
 - name: Update
-  command: "sudo yum update"
+  command: "sudo yum -y update"
   
 - name: Upgrade
-  command: "sudo yum upgrade"
+  command: "sudo yum -y upgrade"

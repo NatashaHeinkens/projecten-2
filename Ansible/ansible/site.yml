@@ -15,11 +15,13 @@
 - hosts: Proj15JEE
   sudo: true
   vars:
-    download_url: http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz
-    download_folder: /opt
-    java_name: "{{download_folder}}/jdk1.8.0_05"
-    java_archive: "{{download_folder}}/jdk-8u5-linux-x64.tar.gz" 
+    tomcat_enabled: true
+    tomcat_server_port: 80050
+    tomcat_catalina_port: 8983
+    tomcat_catalina_redirect_port: 8443
+    tomcat_hostname: localhost
   roles:
     - common
     - java
+    - tomcat
     - update
