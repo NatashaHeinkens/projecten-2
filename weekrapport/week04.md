@@ -78,8 +78,9 @@
 
 ### Hans Meuris
 
-* opdracht 3 labo 3 afwerken
-* opdracht 3 testplan 4 maken
+* Opdracht 3 labo 3 afwerken
+* Opdracht 3 testplan 4 maken
+* Opdracht 2 testplannen Java EE en LAMP-Stack
 
 ## Waar hebben jullie nog problemen mee?
 
