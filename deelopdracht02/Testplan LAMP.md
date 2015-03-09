@@ -4,6 +4,7 @@
 *Auteur testplan: Hans Meuris
 
 Bij het testen checkt men de volgende items:
+
 1. Het stappenplan volgen levert een werkende VM op, en via VirtualBox kan je mappen op het hostsysteem op een VM “mounten”. 
 Het stappenplan is exact reproduceerbaar.
 2. Het opzetten van een VM is geautomatiseerd.
