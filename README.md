@@ -21,7 +21,7 @@
 ## Windows Azure codes
 Registratie/activatie met de code gebeurt op: [http://www.microsoftazurepass.com/](http://www.microsoftazurepass.com/). Na activatie kunt u naar MS Azure Management Portal surfen: [https://manage.windowsazure.com](https://manage.windowsazure.com). De Azure omgeving kunt u, na activatie, 180 dagen gebruiken.
 
-* MCN6BE2MT63OMK
+* MCN6BE2MT63OMK (Gebruikt: Birgit)
 * MCIMJ4PXVGD3CU
 * MCD4RTD9XQMI24
 * MCUVT4SLU1X20W
