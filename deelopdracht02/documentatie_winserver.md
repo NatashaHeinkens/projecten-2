@@ -46,7 +46,7 @@ Eigen iso gebruiken of windows updates overslaan: zie onderaan.
 
 Je hebt nodig:
 * De Vagrantbox aangemaakt in het stappenplan hierboven.
-* Het archief [test-project] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/test-project.zip), uitgepakt (bestanden Vagrantfile en install.ps1 ) in een projectmap.
+* Het archief [vagrant-windows] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/vagrant-windows.zip), uitgepakt (bestanden Vagrantfile en install.ps1 ) in een projectmap.
 
 1. [Download] (http://www.vagrantup.com/downloads) en [installeer] (http://docs.vagrantup.com/v2/installation/index.html) Vagrant.
 2. Open een command prompt en navigeer naar de folder waar je windows_2012_r2_virtualbox.box hebt opgeslagen en typ `vagrant box add WinServer2012R2 .\windows_2012_r2_virtualbox.box`.  
@@ -56,7 +56,7 @@ Je hebt nodig:
 5. Resultaat: een VM die in de achtergrond draait onder VirtualBox. 
 
 
-De folder waarin de Vagrantfile staat, is op de VM gemount in de map C:\vagrant. Er is port forwarding voorzien van poort 8080 (host) naar poort 80 (guest). Na deployment van de webapplicatie kan je dus op de host surfen naar http://127.0.0.1:8080 om de site, die je serveert op de guest, te bekijken.
+De folder waarin de Vagrantfile staat, is op de VM gemount in de map C:\vagrant. Er is port forwarding voorzien van poort 8080 (host) naar poort 80 (guest). Deployment gebeurt naar 127.0.0.1:8080 met l/p vagrant/vagrant. Na deployment van de webapplicatie kan je op de host surfen naar http://127.0.0.1:8080 om de site, die je serveert op de guest, te bekijken.
 
 Je kan de desktop van de VM oproepen met het commando `vagrant rdp`. Inloggen met l/p: vagrant/vagrant.
 
