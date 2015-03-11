@@ -9,11 +9,9 @@
 
 ##Stappenplan
 **Stap 1.** Add de box met minimal Centos7 install aan vagrant in gitbash.
-	`vagrant box add [naam] [URL]`
-	
-(vb: vagrant box add LAMP c:\\Projecten\\LAMP\\centos70-nocm.box)
-
-((Om te kijken als de box weldegelijk is toegevoegd controleer met `vagrant box list`, als hij er tussen staat is alles correct verlopen))
+	`vagrant box add [naam] [URL]`  
+	(vb: vagrant box add LAMP c:\\Projecten\\LAMP\\centos70-nocm.box)  
+	((Om te kijken als de box weldegelijk is toegevoegd controleer met `vagrant box list`, als hij er tussen staat is alles correct verlopen))
 
 **Stap 2.** De ansible files zijn nu klaar om geconfigureerd te worden.
 De volgende files in het mapje "ansible-skeleton" moeten aangepast worden:
@@ -43,7 +41,7 @@ Even een woordje uitleg. Hier ben je zelf vrij in. Je kan alles roles zoveel ops
      with_items:
        - libselinux-python
    ```
-   Dit wordt dan geinstalleerd en heb je nodig om met ansible templates te kunnen werken. (Staat vermeld p de website van       ansible onder documentation)
+   Dit wordt dan geinstalleerd en heb je nodig om met ansible templates te kunnen werken. (Staat vermeld p de website van   ansible onder documentation)
    De keuze is echter aan de systeembeheerder om hier iets extra in op te nemen. Ik heb de keuze genomen om een aparte map te    maken waar alles voor de lamp in terecht komt.
 
    * lamp/main.yml
@@ -72,9 +70,10 @@ Even een woordje uitleg. Hier ben je zelf vrij in. Je kan alles roles zoveel ops
        - [ http, https ]
        - [ true, false ]
     ```
-   Woordje uitleg:    - install web; apache(httpd), php en mysql worden geinstalled.
-	   	   - Start Apache service, om apache te laten draaien
-	   	   - De firewall instellingen
+   Woordje uitleg:  
+      install web; apache(httpd), php en mysql worden geinstalled  
+      Start Apache service; om apache te laten draaien  
+      De firewall instellingen
 
    * **site.yml** (te vinden onder ansible-skeleton\ansible)
    De naam van de host en zijn roles worden hierin vermeld.
@@ -96,7 +95,7 @@ Dit kan even duren. Je kan Virtualbox open zetten en dan zou je normaal gezien '
 **Stap 4.** De machine is up and running. Om te controleren als alles correct is verlopen kunnen we eens kijken als we een SSH verbinding hebben.
  `vagrant SSH`
 
-**Stap 5.** Nog even testen als de server werkt. Open een browser en surf naar het ip-adres van de host. In dit geval is dat: http://192.168.56.10
+**Stap 5.** Nog even testen als de server werkt. Open een browser en surf naar het ip-adres van de host. In dit geval is dat: http://192.168.56.10.
 Als alles correct is verlopen krijg je nu de test pagina van apache zelf te zien.
 
 Succes!
