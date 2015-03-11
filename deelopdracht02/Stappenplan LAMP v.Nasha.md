@@ -12,11 +12,12 @@
 	`vagrant box add [naam] [URL]`
 	(vb: vagrant box add LAMP c:\\Projecten\\LAMP\\centos70-nocm.box)
 	((Om te kijken als de box weldegelijk is toegevoegd controleer met `vagrant box list`, als hij er tussen staat is alles correct verlopen))
+
 **Stap 2.** De ansible files zijn nu klaar om geconfigureerd te worden.
 De volgende files in het mapje "ansible-skeleton" moeten aangepast worden:
   * **vagrantfile**
 Hierin moet de naam van de box meegegeven worden op lijn 67 `config.vm.box = '[naam]'`
-(vb:  config.vm.box = 'LAMP')
+  (vb:  config.vm.box = 'LAMP')  
 
   * **inventory_dev** (Enkel voor windows hosts-- te vinden onder het mapje ansible in ansible-skeleton)
 Voeg de gekozen naam van de host toe.
@@ -32,19 +33,22 @@ Even een woordje uitleg. Hier ben je zelf vrij in. Je kan alles roles zoveel ops
   1. common/main.yml
 In het mapje ansible-skeleton\ansible\roles vind je standaard al het mapje 'common' met daaronder een mapje tasks en als laatste main.yml.
 In dit bestandje staat enkel:
-`# roles/common/main.yml
+```
+# roles/common/main.yml
 ---
 - name: Install common packages
   yum: pkg={{item}} state=installed
   with_items:
-    - libselinux-python`
+    - libselinux-python
+    ```
 Dit wordt dan geinstalleerd en heb je nodig om met ansible templates te kunnen werken. (Staat vermeld p de website van ansible onder documentation)
 De keuze is echter aan de systeembeheerder om hier iets extra in op te nemen. Ik heb de keuze genomen om een aparte map te maken waar alles voor de lamp in terecht komt.
 
   2. lamp/main.yml
 Navigeer terug naar ansible-skeleton\ansible\roles en maak een extra map 'lamp' aan. Hierin maak je een .yml bestand (copy/paste main.yml bestand van vorige file)
 In deze main.yml (Let er op dat de .yml file "main" heet) voeg je alle instellingen toe die de lamp nodig heeft.
-`# roles/lamp/main.yml
+```
+# roles/lamp/main.yml
 ---
 - name: Install web
   yum: pkg={{item}} state=installed
@@ -64,7 +68,8 @@ In deze main.yml (Let er op dat de .yml file "main" heet) voeg je alle instellin
   firewalld: zone=public service={{item[0]}} state=enabled permanent={{item[1]}}
   with_nested:
     - [ http, https ]
-    - [ true, false ]`
+    - [ true, false ]
+    ```
 Woordje uitleg: - install web; apache(httpd), php en mysql worden geinstalled.
 		- Start Apache service, om apache te laten draaien
 		- De firewall instellingen
@@ -72,13 +77,15 @@ Woordje uitleg: - install web; apache(httpd), php en mysql worden geinstalled.
   * **site.yml** (te vinden onder ansible-skeleton\ansible)
 De naam van de host en zijn roles worden hierin vermeld.
 Voeg de naam van de host toe en zijn rollen.
-`# site.yml
+```
+# site.yml
 ---
 - hosts: web
   sudo: true
   roles:
     - common
-    - lamp`
+    - lamp
+```
 
 **Stap 3.** De ansible files zijn nu klaar en dus is alles klaar om de machine op te starten.
 `vagrant up`
