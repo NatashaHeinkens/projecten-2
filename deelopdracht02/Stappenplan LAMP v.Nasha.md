@@ -32,7 +32,7 @@ De naam en ip adres wordt hierin meegegeven.
 
   * **Roles definiëren**
 Even een woordje uitleg. Hier ben je zelf vrij in. Je kan alles roles zoveel opsplitsen als je wilt en voor elk een mapje maken. Hoe dieper je de roles splitst hoe meer mapjes je hebt. Zelf heb ik maar gekozen om 2 mapjes te maken aangezien het allemaal toch samen hoort bij de 'LAMP stack'.
-1. common/main.yml
+  1. common/main.yml
 In het mapje ansible-skeleton\ansible\roles vind je standaard al het mapje 'common' met daaronder een mapje tasks en als laatste main.yml.
 In dit bestandje staat enkel:
    ```
@@ -46,7 +46,7 @@ In dit bestandje staat enkel:
    Dit wordt dan geinstalleerd en heb je nodig om met ansible templates te kunnen werken. (Staat vermeld p de website van       ansible onder documentation)
    De keuze is echter aan de systeembeheerder om hier iets extra in op te nemen. Ik heb de keuze genomen om een aparte map te    maken waar alles voor de lamp in terecht komt.
 
-2. lamp/main.yml
+  1. lamp/main.yml
    Navigeer terug naar ansible-skeleton\ansible\roles en maak een extra map 'lamp' aan. Hierin maak je een .yml bestand      (copy/paste main.yml bestand van vorige file)
    In deze main.yml (Let er op dat de .yml file "main" heet) voeg je alle instellingen toe die de lamp nodig heeft.
    ```
@@ -76,18 +76,18 @@ In dit bestandje staat enkel:
 	   	   - Start Apache service, om apache te laten draaien
 	   	   - De firewall instellingen
 
-  * **site.yml** (te vinden onder ansible-skeleton\ansible)
-De naam van de host en zijn roles worden hierin vermeld.
-Voeg de naam van de host toe en zijn rollen.
-```
-# site.yml
----
-- hosts: web
-  sudo: true
-  roles:
-    - common
-    - lamp
-```
+   1. **site.yml** (te vinden onder ansible-skeleton\ansible)
+   De naam van de host en zijn roles worden hierin vermeld.
+   Voeg de naam van de host toe en zijn rollen.
+   ```
+   # site.yml
+   ---
+   - hosts: web
+     sudo: true
+     roles:
+       - common
+       - lamp
+   ```
 
 **Stap 3.** De ansible files zijn nu klaar en dus is alles klaar om de machine op te starten.
 `vagrant up`
