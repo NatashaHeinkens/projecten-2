@@ -40,7 +40,7 @@ In dit bestandje staat enkel:
   yum: pkg={{item}} state=installed
   with_items:
     - libselinux-python
-    ```
+```
 Dit wordt dan geinstalleerd en heb je nodig om met ansible templates te kunnen werken. (Staat vermeld p de website van ansible onder documentation)
 De keuze is echter aan de systeembeheerder om hier iets extra in op te nemen. Ik heb de keuze genomen om een aparte map te maken waar alles voor de lamp in terecht komt.
 
@@ -69,7 +69,7 @@ In deze main.yml (Let er op dat de .yml file "main" heet) voeg je alle instellin
   with_nested:
     - [ http, https ]
     - [ true, false ]
-    ```
+ ```
 Woordje uitleg: - install web; apache(httpd), php en mysql worden geinstalled.
 		- Start Apache service, om apache te laten draaien
 		- De firewall instellingen
