@@ -66,10 +66,10 @@ Even een woordje uitleg. Hier ben je zelf vrij in. Je kan alles roles zoveel ops
      service: name=firewalld state=started enabled=yes
 
    - name: Configure firewalld
-     firewalld: zone=public service={{item[0]}} state=enabled permanent={{item[1]}}
-     with_nested:
-       - [ http, https ]
-       - [ true, false ]
+     firewalld: service={{item}} permanent=true state=enabled
+     with_items:
+       - http
+       - https
        
    - name: Install MySQL
      yum: pkg={{item}} state=installed
@@ -87,6 +87,12 @@ Even een woordje uitleg. Hier ben je zelf vrij in. Je kan alles roles zoveel ops
    - name: Create application database user
      mysql_user: name={{ dbuser }} password={{ dbpasswd }}
                    priv=*.*:ALL host='localhost' state=present
+
+   - name: Updates and reboot
+     command: {{item}}
+     with_items:
+       - "sudo yum update"
+       - "sudo reboot"
     ```
    Woordje uitleg:  
       install web; apache(httpd), php en mysql worden geinstalled  
