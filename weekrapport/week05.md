@@ -43,7 +43,9 @@
 
 ### Hans Meuris
 
-* ...
+* Reorganisatie Huboard
+* Testplannen LAMP en Java EE
+* voortwerken labo 3
 
 ![Afbeelding individueel rapport tijdregistratie] ( https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week05_files/hans_w05.png "hans")
 
@@ -65,6 +67,8 @@ Volledige afwerking deelopdracht 2
 
 
 ### Hans Meuris
+
+* Java EE - box maken
 
 ## Waar hebben jullie nog problemen mee?
 
