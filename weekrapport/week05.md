@@ -3,12 +3,12 @@
 * Groep: g07
 * Datum: 12/03/2015
 
-| Student  | Aanw. | Opmerking |
-| :---     | :---  | :---      |
+| Student          | Aanw. | Opmerking |
+| :---             | :---  | :---      |
 | Natasha Heinkens |       |           |
-| Robbe Van Daele |       |           |
-| Birgitta Croux |       |           |
-| Hans Meuris |       |           |
+| Robbe Van Daele  |       |           |
+| Birgitta Croux   |       |           |
+| Hans Meuris      |       |           |
 
 ## Wat heb je deze week gerealiseerd?
 
@@ -30,7 +30,8 @@
 
 ### Robbe Van Daele
 
-* ...
+* LAMP security
+* JEE opzoekwerk
 
 ![Afbeelding individueel rapport tijdregistratie] ( https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week05_files/robbe_w05.png "robbe")
 
@@ -61,6 +62,9 @@ Volledige afwerking deelopdracht 2
     * testen  
 
 ### Robbe Van Daele
+* Java EE box helpen maken
+* Java EE box automatiseren
+* Volledige afwerking van deelopdracht 2
 
 ### Birgitta Croux  
 * Afwerken implementatie productieomgeving Azure + documentatie
