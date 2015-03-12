@@ -1,7 +1,7 @@
 # Voortgangsrapport week nn
 
 * Groep: g07
-* Datum:
+* Datum: 12/03/2015
 
 | Student  | Aanw. | Opmerking |
 | :---     | :---  | :---      |
@@ -23,7 +23,9 @@
 
 ### Natasha Heinkens
 
-* ...
+* Lamp stack geconfigureerd en opgesteld
+* Stappenpla opgesteld voor LAMP
+* Testplan opgesteld voor LAMP
 
 [Afbeelding individueel rapport tijdregistratie]
 
@@ -49,14 +51,19 @@
 
 ### Algemeen
 ### Natasha Heinkens
+  * Volledige afwerking van deelopdracht 2
+    * stappenplannen
+    * testplannen
+    * testen  
+
 ### Robbe Van Daele
 ### Birgitta Croux
 ### Hans Meuris
 
 ## Waar hebben jullie nog problemen mee?
 
-* ...
-* ...
+* Het op tijd afwerken van de opdracht
+* Hans zijn ansible werkt nog steeds niet.
 
 ## Feedback technisch luik
 
