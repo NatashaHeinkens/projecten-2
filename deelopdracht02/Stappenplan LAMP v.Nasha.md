@@ -10,7 +10,7 @@
 ##Stappenplan
 **Stap 1.** Add de box met minimal Centos7 install aan vagrant in gitbash.
 	`vagrant box add [naam] [URL]`  
-	(vb: vagrant box add LAMP c:\\Projecten\\LAMP\\centos70-nocm.box)  
+	(vb: vagrant box add LAMP c:\\\\Projecten\\\\LAMP\\\\centos70-nocm.box)  
 	((Om te kijken als de box weldegelijk is toegevoegd controleer met `vagrant box list`, als hij er tussen staat is alles correct verlopen))
 
 **Stap 2.** De ansible files zijn nu klaar om geconfigureerd te worden.
