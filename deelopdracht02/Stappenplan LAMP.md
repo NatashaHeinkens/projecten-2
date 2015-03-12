@@ -5,6 +5,7 @@
   * vagrant
   * [ansible skeleton](https://github.com/bertvv/ansible-skeleton)
   * [base box](https://www.dropbox.com/s/gmvwuv2rwn8mb4u/centos70-nocm.box?dl=0)
+  * [mapje PhpTest]()
   * [optioneel!] Sublime Text 2 (voor gemakzucht)
 
 ##Stappenplan
@@ -69,19 +70,41 @@ Even een woordje uitleg. Hier ben je zelf vrij in. Je kan alles roles zoveel ops
      with_nested:
        - [ http, https ]
        - [ true, false ]
+       
+   - name: Install MySQL
+     yum: pkg={{item}} state=installed
+     with_items:
+       - mariadb
+       - mariadb-server
+       - MySQL-python
+
+   - name: Start MariaDB service
+     service: name=mariadb state=running enabled=yes
+
+   - name: Create application database
+     mysql_db: name={{ dbname }} state=present
+
+   - name: Create application database user
+     mysql_user: name={{ dbuser }} password={{ dbpasswd }}
+                   priv=*.*:ALL host='localhost' state=present
     ```
    Woordje uitleg:  
       install web; apache(httpd), php en mysql worden geinstalled  
       Start Apache service; om apache te laten draaien  
-      De firewall instellingen
+      De firewall instellingen  
+      Install MySQL en volgende; installatie en configuratie van MySQL
 
    * **site.yml** (te vinden onder ansible-skeleton\ansible)
-   De naam van de host en zijn roles worden hierin vermeld.
-   Voeg de naam van de host toe en zijn rollen.
+   De naam van de host en zijn roles en variabelen worden hierin vermeld.
+   Voeg de naam van de host toe en zijn rollen en variabelen.
    ```
    # site.yml
    ---
    - hosts: web
+     vars: 
+       dbname: naamTest
+       dbuser: userTest
+       dbpasswd: passTest
      sudo: true
      roles:
        - common
