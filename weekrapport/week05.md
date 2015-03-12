@@ -14,12 +14,11 @@
 
 ### Algemeen
 
+* Afwerken WISA-stack + deployment demo-applicatie
+* LAMP-stack + demo-applicatie getest
+* JavaEE: research
 
-
-* ...
-* ...
-
-[Afbeelding teamoverzicht tijdregistratie onderverdeeld per deelopdracht]
+![Afbeelding teamoverzicht tijdregistratie onderverdeeld per deelopdracht] ( https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week05_files/weekoverzicht_w05.png "kanban")
 
 ### Natasha Heinkens
 
@@ -27,37 +26,44 @@
 * Stappenpla opgesteld voor LAMP
 * Testplan opgesteld voor LAMP
 
-[Afbeelding individueel rapport tijdregistratie]
+![Afbeelding individueel rapport tijdregistratie] ( https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week05_files/natasha_w05.png "natasha")
 
 ### Robbe Van Daele
 
 * ...
 
-[Afbeelding individueel rapport tijdregistratie]
+![Afbeelding individueel rapport tijdregistratie] ( https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week05_files/robbe_w05.png "robbe")
 
 ### Birgitta Croux
 
-* ...
+* Deployment demo-app WISA
+* Opzoekwerk en aanmaken VM Azure
 
-[Afbeelding individueel rapport tijdregistratie]
+![Afbeelding individueel rapport tijdregistratie] ( https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week05_files/birgit_w05.png "birgit")
 
 ### Hans Meuris
 
 * ...
 
-[Afbeelding individueel rapport tijdregistratie]
+![Afbeelding individueel rapport tijdregistratie] ( https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week05_files/hans_w05.png "hans")
 
 ## Wat plan je volgende week te doen?
 
-### Algemeen
-### Natasha Heinkens
+### Algemeen  
+Volledige afwerking deelopdracht 2
+
+### Natasha Heinkens  
   * Volledige afwerking van deelopdracht 2
     * stappenplannen
     * testplannen
     * testen  
 
 ### Robbe Van Daele
-### Birgitta Croux
+
+### Birgitta Croux  
+* Afwerken implementatie productieomgeving Azure + documentatie
+
+
 ### Hans Meuris
 
 ## Waar hebben jullie nog problemen mee?
