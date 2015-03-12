@@ -1,0 +1,11 @@
+---
+# file miscLamp/tasks/main.yml
+- name: Firewall-services
+  firewalld: service={{item}} permanent=true state=enabled
+  with_items:
+    - https
+    - http
+    - ssh
+
+- name: Firewall-ports
+  firewalld: port=2222/tcp permanent=true state=enabled

@@ -11,12 +11,13 @@
     - web
     - db
     - update
+    - miscLamp
     
 - hosts: Proj15JEE
   sudo: true
   vars:
     tomcat_enabled: true
-    tomcat_server_port: 80050
+    tomcat_server_port: 8080
     tomcat_catalina_port: 8983
     tomcat_catalina_redirect_port: 8443
     tomcat_hostname: localhost
