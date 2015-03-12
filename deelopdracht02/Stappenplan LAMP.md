@@ -61,10 +61,7 @@ Even een woordje uitleg. Hier ben je zelf vrij in. Je kan alles roles zoveel ops
 
    - name: Start Apache service
      service: name=httpd state=running enabled=yes
-
-   - name: enable Firewalld
-     service: name=firewalld state=started enabled=yes
-
+     
    - name: Configure firewalld
      firewalld: service={{item}} permanent=true state=enabled
      with_items:
