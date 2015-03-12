@@ -5,7 +5,5 @@
   with_items:
     - https
     - http
-    - ssh
+  notify: restart firewalld
 
-- name: Firewall-ports
-  firewalld: port=2222/tcp permanent=true state=enabled
