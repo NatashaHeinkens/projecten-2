@@ -5,4 +5,5 @@
   * **Stap 3.** De geinstalleerde versies van de features zijn:
        * IIS(Version 8.5.9600.16384): Server manager > Tools > ISS manager > Help > about
        * ASP.NET 4.5: Server manager > manage > add roles and features > features 
-       * SQL Server Express 2014: 
+       * SQL Server Express 2014 (-12.0.2000.8): powershell as administrator > import-module sqlps > Set-Location SQLSERVER:\SQL\VAGRANT-2012-R2\SQLEXPRESS > invoke-sqlcmd -query "select @@version" 
+  * **stap 4.**  De VM is geconfigureerd om de laatste updates te installeren.
