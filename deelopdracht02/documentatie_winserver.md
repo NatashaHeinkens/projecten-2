@@ -68,9 +68,22 @@ De box vernietigen doe je met `vagrant destroy` (alle provisionering gaat verlor
 In de drie gevallen kan je de box opnieuw opstarten met `vagrant up`.
 
 ##WISA deel 2: productie
-Voor *windows + gratis* lijken met de beste opties: 
-* amazon web services: http://aws.amazon.com/free/   
-* azure: http://www.microsoftazurepass.com/azureu -> dit moet dan wel via mr. Van Vreckem, meer informatie volgt.
+
+###Opzetten van de Azure VM
+
+Je hebt nodig:
+* Een Azure account
+
+1. Log in op de Azure Management Portal
+2. Kies in de lijst links `Virtual Machines` en klik op `Create new VM` of links onderaan op `New`
+3. `Compute` > `Virtual Machine` > `From Gallery` 
+4. Image: Windows Server 2012 R2 Datacenter
+5. Kies een naam voor de machine, Basic Tier, Size A0; kies een username en een **sterk** paswoord
+6. Kies `Create a new cloud service`, kies een dns-naam, Regio West Europe
+
+Eens de VM draait, kan je ermee verbinden door onderaan in het managementportaal `Connect` te kiezen.
+
+
 
 [tutorial virtualisatie]: http://www.developer.com/net/virtualize-your-windows-development-environments-with-vagrant-packer-and-chocolatey-part-1.html
 [joefitzgerald]: https://github.com/joefitzgerald/packer-windows
