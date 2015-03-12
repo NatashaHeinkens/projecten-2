@@ -21,7 +21,7 @@ Echter: device in Packet Tracer heeft IOS-versie 12.2, niet 15.0
 
 **Dit onderdeel is niet testbaar in Packet Tracer**
 
-* De computer is verbonden met de switch via een mini-USBkabel.
+* De computer is verbonden met de switch via een mini-USB-kabel.
 * De USB-consolepoort is klaar voor toegang.
 * (Optioneel) De COM-poort op de computer is geactiveerd.
 * Er is een werkende USB console driver en een COM-poort die beschikbaar is voor connectie in een terminal emulator.
