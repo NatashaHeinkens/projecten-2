@@ -14,7 +14,7 @@
 
 ### Algemeen
 
-[Afbeelding huidige toestand Kanban-bord(en) invoegen]
+
 
 * ...
 * ...
