@@ -23,4 +23,4 @@
   * De SSH is verkregen via `vagrant SSH`  
   
 **Stap 5.**
-  * De apache test pagina is te zien als men naar http://http://192.168.56.10 surft.
+  * De apache test pagina is te zien als men naar http://192.168.56.10 surft.
