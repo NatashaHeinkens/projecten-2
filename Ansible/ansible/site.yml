@@ -10,7 +10,6 @@
     - common
     - web
     - db
-    - update
     - miscLamp
     
 - hosts: Proj15JEE
@@ -25,4 +24,3 @@
     - common
     - java
     - tomcat
-    - update
