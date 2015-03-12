@@ -1,4 +1,4 @@
-# Voortgangsrapport week nn
+# Voortgangsrapport week 05
 
 * Groep: g07
 * Datum: 12/03/2015
@@ -23,7 +23,7 @@
 ### Natasha Heinkens
 
 * Lamp stack geconfigureerd en opgesteld
-* Stappenpla opgesteld voor LAMP
+* Stappenplan opgesteld voor LAMP
 * Testplan opgesteld voor LAMP
 
 ![Afbeelding individueel rapport tijdregistratie] ( https://github.com/HoGentTIN/ops-g-07/blob/master/weekrapport/week05_files/natasha_w05.png "natasha")
@@ -70,6 +70,7 @@ Volledige afwerking deelopdracht 2
 
 * Het op tijd afwerken van de opdracht
 * Hans zijn ansible werkt nog steeds niet.
+* Birgit kan niet verbinden met de azure VM via rdp
 
 ## Feedback technisch luik
 
