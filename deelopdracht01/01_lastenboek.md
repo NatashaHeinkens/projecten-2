@@ -16,19 +16,19 @@
 
 ### Deeltaken
 
-* Planning IP adressering - deelvraag 1
-* Planning IP adressering - deelvraag 2
+* Planning IP adressering - Deeltaak 1: Hostinformatie
+* Planning IP adressering - Deeltaak 2: IP-planning
 * Testen 
 
 ### Tijdbesteding
 
-###Planning IP adressering - deelvraag 1:
+###Planning IP adressering - deeltaak 1:
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Robbe Van Daele |    15 min     |     15 min       |
 | Hans Meuris |     15 min    |      15 min        |
 
-###Planning IP adressering - deelvraag 1:
+###Planning IP adressering - deeltaak 2:
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Robbe Van Daele |   30 min      |     40 min    |
