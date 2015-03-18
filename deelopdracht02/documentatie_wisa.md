@@ -97,6 +97,7 @@ Eens de VM draait, kan je ermee verbinden door onderaan in het managementportaal
 ###Endpoints creëren voor Web Deploy en HTTP
 
 **Web Deploy**  
+
 1. Klik in de management portal op de VM-naam, kies de sectie Endpoints, kies onderaan Add
 2. Kies `Add a stand-alone endpoint`
 3. Geef als naam `Web Deploy` in
@@ -104,6 +105,7 @@ Eens de VM draait, kan je ermee verbinden door onderaan in het managementportaal
 5. Public port en Private port: 8172
 
 **HTTP**  
+
 1. Klik in de management portal op de VM-naam, kies de sectie Endpoints, kies onderaan Add
 2. Kies `Add a stand-alone endpoint`
 3. Kies het voorgedefinieerde endpoint `HTTP` uit de lijst
