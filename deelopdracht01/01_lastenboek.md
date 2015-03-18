@@ -16,19 +16,19 @@
 
 ### Deeltaken
 
-* Taak 1
-* Taak 2
+* Planning IP adressering - 1e vraag
+* Planning IP adressering - 2e vraag
 * Testen 
 
 ### Tijdbesteding
 
-###Taak 1:
+###Planning IP adressering - 1e vraag:
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Robbe Van Daele |    15 min     |     15 min       |
 | Hans Meuris |     15 min    |      15 min        |
 
-###Taak 2:
+###Planning IP adressering - 2e vraag:
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Robbe Van Daele |   30 min      |     40 min    |
