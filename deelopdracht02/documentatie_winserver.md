@@ -34,15 +34,8 @@ Eigen iso gebruiken of windows updates overslaan: zie onderaan.
 1. Uncomment in Autounattend.xml de sectie WITHOUT WINDOWS UPDATES (lijn 237 e.v.)
 2. Comment de sectie daaronder WITH WINDOWS UPDATES
 
-###Configuratie VM
 
-* De box aangemaakt in het stappenplan is Windows Server 2012 R2 met de laatste updates. Deze is ook geconfigureerd voor automatische updates.
-* De firewall in Windows Server laat HTTP-verkeer door op poort 80, SSL op poort 443. Ook voor OpenSSH en RDP zijn de nodige poorten geopend (voor Vagrant).
-* Usernames en paswoorden (vagrant/vagrant) moeten uiteraard anders op de productieserver.
-* Configuratie van IIS: anonymous access onder beperkte permissies, DefaultAppPool is geconfigureerd voor .NET v4.0.
-* Als database-optie is er SQL Server (weliswaar de Express-versie voor de development box). 
-
-###Handleiding voor de gebruiker
+###Gebruik van de Vagrantbox: handleiding voor de gebruiker
 
 Je hebt nodig:
 * De Vagrantbox aangemaakt in het stappenplan hierboven.
@@ -67,6 +60,15 @@ Je kan de box afsluiten met:
 De box vernietigen doe je met `vagrant destroy` (alle provisionering gaat verloren, de volgende keer dat je `vagrant up` doet begint het hele proces van bij het begin)
 In de drie gevallen kan je de box opnieuw opstarten met `vagrant up`.
 
+###Configuratie VM
+
+* De box aangemaakt in het stappenplan is Windows Server 2012 R2 met de laatste updates. Deze is ook geconfigureerd voor automatische updates.
+* De firewall in Windows Server laat HTTP-verkeer door op poort 80, SSL op poort 443. Ook voor OpenSSH en RDP zijn de nodige poorten geopend (voor Vagrant).
+* Usernames en paswoorden (vagrant/vagrant) moeten uiteraard anders op de productieserver.
+* Configuratie van IIS: anonymous access onder beperkte permissies, DefaultAppPool is geconfigureerd voor .NET v4.0.
+* Als database-optie is er SQL Server (weliswaar de Express-versie). 
+
+
 ##WISA deel 2: productie
 
 ###Opzetten van de Azure VM
@@ -81,9 +83,17 @@ Je hebt nodig:
 5. Kies een naam voor de machine, Basic Tier, Size A0; kies een username en een **sterk** paswoord
 6. Kies `Create a new cloud service`, kies een dns-naam, Regio West Europe
 
-Eens de VM draait, kan je ermee verbinden door onderaan in het managementportaal `Connect` te kiezen.
+Eens de VM draait, kan je ermee verbinden door onderaan in het managementportaal `Connect` te kiezen. Het rdp-bestand, dat je dan downloadt, openen en credentials ingeven.
 
+###IIS en SQL Server Express installeren
 
+1. Maak een rdp-verbinding met de VM.
+2. Copy-paste het script install.ps1 (uit het archief vagrant-windows, zie boven) naar de VM.
+3. Open op de VM Powershell als administrator en navigeer naar de plaats waar je het script hebt opgeslagen.
+4. Voer het commando `.\install.ps1` uit.
+
+###Deployment naar de productieserver: handleiding voor de gebruiker
+//TODO
 
 [tutorial virtualisatie]: http://www.developer.com/net/virtualize-your-windows-development-environments-with-vagrant-packer-and-chocolatey-part-1.html
 [joefitzgerald]: https://github.com/joefitzgerald/packer-windows
