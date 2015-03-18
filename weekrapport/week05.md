@@ -83,6 +83,21 @@ Volledige afwerking deelopdracht 2
 ## Feedback technisch luik
 
 ### Algemeen
+* Vraag ivm. rdp:
+ * Connecteren gebeurt normaal op poort 3389 of via poort gedefinieerd op Azure.
+ * Op Windows Server moet je 2 zaken doen: Gebruiker moet lid zijn van Remote Desktop Users, Allow log on through Remote Desktop Services moet actief staan.
+* Lastenboek opdracht 1 => Wat zijn jullie deeltaken? Met deeltaken "taak 1", "taak 2" weet ik niets.
+* Lastenboek opdracht 2 OK mits aanvulling effectief gepresteerde uren.
+* Breng structuur op jullie Github (bv. aparte map per webserver)
+* Java EE
+ * Nog steeds in "readu for next stage" ...
+* LAMP
+ * stappenplan/handleiding goed uitgewerkt
+ * testplan/testrapport op de goede weg => zorg er wel voor dat het 2 aparte documenten zijn.
+* WISA
+ * testplan OK (goed gestructureerd)
+ * testrapport => wat is uitvoer bij stap 2? success? failure?, voor de rest inhoudelijk OK.
+ * stappenplan/handleiding goed uitgewerkt
 
 ### Natasha Heinkens
 ### Robbe Van Daele
