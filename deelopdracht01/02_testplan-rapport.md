@@ -93,6 +93,5 @@ Uitvoerder test: Birgitta Croux
    | Personeel1     | 172.16.1.254| 255.255.254.0   | 172.16.0.1      |
    
 3. Connectiviteit testen  
-  * Ping naar default gateway: zie scenario's 1-3 test_ipplanning.pkt
-  * Ping naar host binnen ander subnet op dezelfde router: zie scenario 4 test_ipplanning.pkt
-  * Ping naar host binnen ander subnet op andere router: zie scenario 5 test_ipplanning.pkt
+  * Ping naar localhost: zie scenario 1 test_ipplanning.pkt
+  * Ping naar host binnen ander subnet op andere router: zie scenario 2 test_ipplanning.pkt
