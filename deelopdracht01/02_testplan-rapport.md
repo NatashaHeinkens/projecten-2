@@ -15,7 +15,7 @@ Testen op te zetten in Packet Tracer
   3. Configuratie van de nodige static routes voor elke router  
      Voor de subnetten die niet rechtstreeks met een interface op de router verbonden zijn moet er routeringsinformatie toegevoegd worden. Static routes zijn een geschikte manier om dit te doen in het kader van deze test.
 3. Connectiviteit testen  
-   Ping vanop end devices naar default gateway, naar end device in ander subnet op dezelfde router (indien van toepassing), naar end device in ander subnet op andere router.
+   Ping vanop end devices naar localhost, naar end device in ander subnet op andere router.
 
 ### Testrapport
 
