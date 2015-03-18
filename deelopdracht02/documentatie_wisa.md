@@ -5,7 +5,7 @@
 Ik heb zoals je weet [dit artikel][tutorial virtualisatie] gevolgd. Het maakt gebruik van [deze scripts] [joefitzgerald]. Er zit ook al een basis-vagrantfile bij die werkt met de box die het script opzet, en die we verder kunnen aanpassen.
 
 Je hebt nodig:
-* het archief [packer-windows] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/packer-windows.zip) (uitpakken)
+* het archief [packer-windows] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/wisa_files/packer-windows.zip) (uitpakken)
 * als je geen evaluatieversie wil installeren, maar een eigen iso wil gebruiken:
    * deze iso
    * een md5-checksum voor deze iso
@@ -39,7 +39,7 @@ Eigen iso gebruiken of windows updates overslaan: zie onderaan.
 
 Je hebt nodig:
 * De Vagrantbox aangemaakt in het stappenplan hierboven.
-* Het archief [vagrant-windows] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/vagrant-windows.zip), uitgepakt (bestanden Vagrantfile en install.ps1 ) in een projectmap.
+* Het archief [vagrant-windows] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/wisa_files/vagrant-windows.zip), uitgepakt (bestanden Vagrantfile en install.ps1 ) in een projectmap.
 
 1. [Download] (http://www.vagrantup.com/downloads) en [installeer] (http://docs.vagrantup.com/v2/installation/index.html) Vagrant.
 2. Open een command prompt en navigeer naar de folder waar je windows_2012_r2_virtualbox.box hebt opgeslagen en typ `vagrant box add WinServer2012R2 .\windows_2012_r2_virtualbox.box`.  
@@ -63,10 +63,12 @@ In de drie gevallen kan je de box opnieuw opstarten met `vagrant up`.
 ###Configuratie VM
 
 * De box aangemaakt in het stappenplan is Windows Server 2012 R2 met de laatste updates. Deze is ook geconfigureerd voor automatische updates.
-* De firewall in Windows Server laat HTTP-verkeer door op poort 80, SSL op poort 443. Ook voor OpenSSH en RDP zijn de nodige poorten geopend (voor Vagrant).
-* Usernames en paswoorden (vagrant/vagrant) moeten uiteraard anders op de productieserver.
 * Configuratie van IIS: anonymous access onder beperkte permissies, DefaultAppPool is geconfigureerd voor .NET v4.0.
 * Als database-optie is er SQL Server (weliswaar de Express-versie). 
+* Tenslotte is ook Web Deploy geïnstalleerd om deployment vanuit Visual Studio te vergemakkelijken.
+* De firewall in Windows Server laat HTTP-verkeer door op poort 80, SSL op poort 443. Ook voor OpenSSH en RDP zijn de nodige poorten geopend (voor Vagrant). Daarnaast is poort 8172 geopend (voor Web Deploy).
+* Usernames en paswoorden (vagrant/vagrant) moeten uiteraard anders op de productieserver.  
+
 
 
 ##WISA deel 2: productie
@@ -83,7 +85,7 @@ Je hebt nodig:
 5. Kies een naam voor de machine, Basic Tier, Size A0; kies een username en een **sterk** paswoord
 6. Kies `Create a new cloud service`, kies een dns-naam, Regio West Europe
 
-Eens de VM draait, kan je ermee verbinden door onderaan in het managementportaal `Connect` te kiezen. Het rdp-bestand, dat je dan downloadt, openen en credentials ingeven.
+Eens de VM draait, kan je ermee verbinden door onderaan in het managementportaal `Connect` te kiezen. Het rdp-bestand, dat je dan downloadt, openen en l/p ingeven. Het certificaat aanvaarden.
 
 ###IIS en SQL Server Express installeren
 
@@ -92,8 +94,25 @@ Eens de VM draait, kan je ermee verbinden door onderaan in het managementportaal
 3. Open op de VM Powershell als administrator en navigeer naar de plaats waar je het script hebt opgeslagen.
 4. Voer het commando `.\install.ps1` uit.
 
-###Deployment naar de productieserver: handleiding voor de gebruiker
-//TODO
+###Endpoints creëren voor Web Deploy en HTTP
+
+**Web Deploy**  
+1. Klik in de management portal op de VM-naam, kies de sectie Endpoints, kies onderaan Add
+2. Kies `Add a stand-alone endpoint`
+3. Geef als naam `Web Deploy` in
+4. Protocol: TCP
+5. Public port en Private port: 8172
+
+**HTTP**  
+1. Klik in de management portal op de VM-naam, kies de sectie Endpoints, kies onderaan Add
+2. Kies `Add a stand-alone endpoint`
+3. Kies het voorgedefinieerde endpoint `HTTP` uit de lijst
+
+###Deployment naar de productieserver via Web Deploy: handleiding voor de gebruiker  
+
+* Server: Geef hier het virtual public ip van de VM in (te vinden bij de ge het Azure managementportaal)
+* User name en Password: zoals gekozen bij het aanmaken van de VM
+
 
 [tutorial virtualisatie]: http://www.developer.com/net/virtualize-your-windows-development-environments-with-vagrant-packer-and-chocolatey-part-1.html
 [joefitzgerald]: https://github.com/joefitzgerald/packer-windows
