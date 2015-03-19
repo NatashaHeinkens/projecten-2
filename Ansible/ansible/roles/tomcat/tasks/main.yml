@@ -7,18 +7,12 @@
     - tomcat-webapps
     - tomcat-admin-webapps
     
-- name: Copy tomcat server.xml
-  template:
-    src: server.xml.j2
-    dest: /etc/tomcat/server.xml
-    owner: root
-    group: root
-    mode: 0644
-  notify: restart tomcat
-  
-- name: Ensure tomcat is running
-  service:
-    name: tomcat
-    state: started
-    enabled: yes
-  when: tomcat_enabled
+- name: Download tomcat-tools
+  command: "cd /tmp/"
+  command: "wget http://apache.cu.be/tomcat/tomcat-7/v7.0.59/bin/apache-tomcat-7.0.59.tar.gz"
+  command: "tar xzf apache-tomcat-7.0.59.tar.gz"
+  command: "sudo mv apache-tomcat-7.0.59 /usr/local/tomcat7"
+
+- name: Tomcat autostarten
+  command: "sudo echo 'bash /usr/local/tomcat7/bin/startup.sh' > /etc/init.d/startTomcat"
+  command: "sudo chmod +x /etc/init.d/startTomcat"

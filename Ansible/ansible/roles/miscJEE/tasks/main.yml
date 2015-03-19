@@ -1,0 +1,8 @@
+---
+# file miscLamp/tasks/main.yml
+- name: Firewall-services
+  firewalld: port={{item}} permanent=true state=enabled
+  with_items:
+    - 8080/tcp
+  notify: restart firewalld
+
