@@ -1,9 +1,10 @@
 # Testplan Opdracht 3, labo 3  
+## Deel 1: Topologie opzetten en apparaten initializeren.  
 1. De fysieke apparatuur komt overeen met de gegeven topologie.
 	1. Vergelijk de afbeelding met hoe de apparatuur opgezet is.
 2. De router en switch zijn geherinitialiseerd en heropgestart.
+## Deel 2: Apparaten configureren en connectiviteit verifiëren.  
 3. De PC's hebben statische IP-configuratie gekregen.
-	1. Controleren via cli of gui.
 4. De router is geconfigureerd.
 	1. de router heeft een device name.
 	2. DNS lookup is uitgeschakeld.
@@ -18,6 +19,7 @@
 	1. de klok op de router is juist ingesteld.
 5. Er is connectiviteit tussen de pc's.
 	1. PC-B ping naar PC-A werkt.
+## Deel 3: Apparaatinformatie weergeven.  
 6. De hard- en software informatie is opgevraagd van de netwerk-toestellen.
 7. Deze (stap 6) output is logisch.
 8. De interface informatie op de router werd getoond.
