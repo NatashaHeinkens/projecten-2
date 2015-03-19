@@ -92,7 +92,7 @@
 #### Labo 4
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
-| Birgitta Croux |               |              |
+| Birgitta Croux |       3:30        |        2:01      |
 
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
@@ -116,7 +116,7 @@
 #### Labo 2 testen
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
-| Birgitta Croux |               |              |
+| Birgitta Croux |       2:00        |              |
 
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
