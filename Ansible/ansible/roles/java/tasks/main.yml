@@ -1,6 +1,0 @@
----
-# file java/tasks/main.yml
-- name: Install java
-  yum: pkg={{item}} state=latest
-  with_items:
-    - java-1.7.0-openjdk-devel.x86_64
