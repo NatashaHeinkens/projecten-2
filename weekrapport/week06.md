@@ -71,7 +71,7 @@
     * HuBoard was nog niet opgemaakt => hoe kun je dan weten wie wat moet doen en in welke fase alles zich bevindt?
     * JAVA EE (14u50) OK
     * LAMP, inclusief demo app "Wordpress" (16u00) OK
-    * WISA 
+    * WISA niet in orde gekregen => beschrijf goed in verslag de problemen
 * opdracht 2
     * WISA testrapport OK mits correct toevoegen van afbeeldingen
 
