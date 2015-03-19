@@ -1,6 +1,5 @@
 ##Testplan Labo 2
 
-Auteur: Natasha Heinkens  
 
 **Dit onderdeel is niet testbaar in Packet Tracer**
 
