@@ -5,7 +5,7 @@
 Ik heb zoals je weet [dit artikel][tutorial virtualisatie] gevolgd. Het maakt gebruik van [deze scripts] [joefitzgerald]. Er zit ook al een basis-vagrantfile bij die werkt met de box die het script opzet, en die we verder kunnen aanpassen.
 
 Je hebt nodig:
-* het archief [packer-windows] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/wisa_files/packer-windows.zip) (uitpakken)
+* het archief [packer-windows] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/wisa/packer-windows.zip) (uitpakken)
 * als je geen evaluatieversie wil installeren, maar een eigen iso wil gebruiken:
    * deze iso
    * een md5-checksum voor deze iso
@@ -39,7 +39,7 @@ Eigen iso gebruiken of windows updates overslaan: zie onderaan.
 
 Je hebt nodig:
 * De Vagrantbox aangemaakt in het stappenplan hierboven.
-* Het archief [vagrant-windows] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/wisa_files/vagrant-windows.zip), uitgepakt (bestanden Vagrantfile en install.ps1 ) in een projectmap.
+* Het archief [vagrant-windows] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/wisa/vagrant-windows.zip), uitgepakt (bestanden Vagrantfile en install.ps1 ) in een projectmap.
 
 1. [Download] (http://www.vagrantup.com/downloads) en [installeer] (http://docs.vagrantup.com/v2/installation/index.html) Vagrant.
 2. Open een command prompt en navigeer naar de folder waar je windows_2012_r2_virtualbox.box hebt opgeslagen en typ `vagrant box add WinServer2012R2 .\windows_2012_r2_virtualbox.box`.  
