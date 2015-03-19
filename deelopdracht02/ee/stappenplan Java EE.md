@@ -1,8 +1,8 @@
 #Prerequisites
-  * Een box met [CentOS 7 min. install](https://f0fff3908f081cb6461b407be80daf97f07ac418.googledrive.com/host/0BwtuV7VyVTSkUG1PM3pCeDJ4dVE/centos7.box)`
+  * Een box met [CentOS 7 min. install](https://f0fff3908f081cb6461b407be80daf97f07ac418.googledrive.com/host/0BwtuV7VyVTSkUG1PM3pCeDJ4dVE/centos7.box)
   * Werkende Vagrant
   * Werkende Ansible
-  * Vagrant en Ansible werken samen (zie [skeleton](https://github.com/bertvv/ansible-skeleton "Dhr Van Vreckem's github")
+  * Vagrant en Ansible werken samen (zie [skeleton](https://github.com/bertvv/ansible-skeleton "Dhr Van Vreckem's github"))
   * Oracle VirtualBox is geïnstalleerd
   * Ruby en Python zijn geïnstalleerd (voor ansible en de skeleton)
 
@@ -13,7 +13,7 @@
     `(newline)  ip: xxx.xxx.xxx.xxx`
   2. (Opdat het ook zou werken op Windows-hosts) pas de ansible/inventory_dev file aan als volgt:
     `gekozenNaam`
-  4. Voeg de minimal-box toe aan vagrant: `vagrant box add centos70-nocm
+  4. Voeg de minimal-box toe aan vagrant: `vagrant box add centos70-nocm`
 2. Breng de machine een eerste keer up: `vagrant up`
   * Je kan testen of de machine effectief draaiend is door `vagrant ssh` uit te voeren, dan krijg je een ssh verbinding naar de guest.
   * Verlaat de ssh verbinding weer met het `exit` commando
