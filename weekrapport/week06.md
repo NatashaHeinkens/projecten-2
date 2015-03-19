@@ -54,6 +54,7 @@
 
 ### Algemeen
 ### Natasha Heinkens
+  * Deelopdracht 3 afwerken; documentatie
 ### Robbe Van Daele
 ### Birgitta Croux
 ### Hans Meuris
