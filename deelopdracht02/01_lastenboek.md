@@ -74,14 +74,14 @@
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |     20 uur           |              |
-| Birgitta Croux |     20 uur          |              |
+| Birgitta Croux |     20 uur          |       15 uur       |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
 #### Taak 4b: Opzetten en configureren van WISA Stack- Security
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |      10 uur          |              |
-| Birgitta Croux |      5 uur         |              |
+| Birgitta Croux |      5 uur         |     1 uur        |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
 #### Taak 5: 3x productieomgeving opzetten: LAMP, JavaEE, WISA
@@ -89,7 +89,7 @@
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |      5 uur          |              |
 | Robbe Van Daele |               |              |
-| Birgitta Croux |       9 uur        |              |
+| Birgitta Croux |       9 uur        |       5 uur       |
 | Hans Meuris |               |              |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
@@ -98,7 +98,7 @@
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |  3 uur              |              |
 | Robbe Van Daele |               |              |
-| Birgitta Croux |     3 uur          |              |
+| Birgitta Croux |     3 uur          |      2:20 uur        |
 | Hans Meuris |               |              |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
@@ -107,6 +107,5 @@
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |  15 uur              |              |
 | Robbe Van Daele |               |              |
-| Birgitta Croux |      10 uur         |              |
 | Hans Meuris |               |              |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
