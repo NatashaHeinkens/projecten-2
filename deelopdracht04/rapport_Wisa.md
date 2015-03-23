@@ -1,6 +1,6 @@
 ## Rapport Labo 4: WISA ##
 
-*Uitvoerder: Hans Meuris
+* Uitvoerder: Hans Meuris
 
 ### Verloop heropstarten WISA ###
 
@@ -26,5 +26,7 @@ Op dit punt was de tijd voor het labo op, en werd me de opdracht gegeven een ged
 
 
 ### Bijlagen: Screenshots ###
-![alt] ( https://github.com/HoGentTIN/ops-g-07/tree/master/deelopdracht04/Lab4_WISA_Error1  “ScreenshotError1")![alt]
-( https://github.com/HoGentTIN/ops-g-07/tree/master/deelopdracht04/Lab4_WISA_Error2  “ScreenshotError2”)
+* Screenshot 1:
+![alt] ( https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht04/screenshots/Lab4_WISA_Error1.png)
+* Screenshot 2:
+![alt] ( https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht04/screenshots/Lab4_WISA_Error2.png)
