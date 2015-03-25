@@ -22,14 +22,13 @@ See Appendix B
 * B) Repeat as above
 
 * C) Open terminal on PC-A and type:
-‘ping 192.168.0.3’
 
-
+`ping 192.168.0.3`
 
 ####step 2####
 Also, see Appendix A.
 * Enter router terminal emulation software and type the following:
-‘’’
+```
 enable
 configure terminal
 hostname R1
@@ -61,37 +60,47 @@ description fast 0/1 is connected to switch S1
 exit
 exit
 copy running-config startup-config
-‘’’
+```
 * This will require confirmation. Simply hit the return key.
 
-‘clock HH/MM/SS DAY MONTH YEAR’
+`clock HH/MM/SS DAY MONTH YEAR`
+
  * With HH/MM/SS in numbers of hours/minutes/seconds, DAY in number of day in the month, MONTH by name and YEAR in 4-digit number  (e.g. 14:50:33 03 March 2015)
 
 * Open the terminal on PC-A
-‘ping 192.168.0.3’
+
+`ping 192.168.0.3`
 
 ###Part 3###
 The required information for each step will become visible after entering the given command(s)
 
 ####Step 1####
 * A) Enter the console password on the router.
-‘show version’
+
+`show version`
+
 * B) Enter the console password on the switch.
-‘show version’
+
+`show version`
 
 ####Step 2####
 
 * Enter the console password on the router.
-‘show ip route’
+
+`show ip route`
 
 ####Step 3####
 
 * Enter the console password on the router.
-‘show interface fastethernet0/1’
+
+`show interface fastethernet0/1`
 
 ####Step 4####
 
 * Enter the console password on the router.
-‘show ip interface brief’
+
+`show ip interface brief`
+
 * Access the switch’s terminal emulation software.
-‘show ip interface brief”’
+
+`show ip interface brief`
