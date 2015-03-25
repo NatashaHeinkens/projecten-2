@@ -1,4 +1,4 @@
-# Rapport Labo 3 #
+# Verslag Labo 3 #
 
 ## Simulation ##
 
