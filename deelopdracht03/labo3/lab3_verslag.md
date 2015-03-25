@@ -63,6 +63,7 @@ See Appendix B
 * Access the switch’s terminal emulation software and type “show ip interface brief”.
 
 Reflection:
+
 1. If the G0/1 interface showed administratively down, what interface configuration command would you use to turn the interface up?
  * “no shutdown”
 2. What would happen if you had incorrectly configured interface G0/1 on the router with an IP address of 192.168.1.2?
