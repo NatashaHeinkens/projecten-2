@@ -28,7 +28,7 @@
 
 ### Kanban-bord
 
-(schermafbeeldingen van de toestand van het Kanban-bord invoegen elke week voor de samenkomst met de begeleider, tot oplevering van de opdracht)
+![HuBoard DO4] ( /deelopdracht04/huboard_d04.png "kanbando4")
 
 ### Tijdbesteding
 
