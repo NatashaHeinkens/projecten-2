@@ -9,10 +9,6 @@ Daarom hebben we geprobeerd een .bat-script toe te voegen aan de Vagrantfile, da
 Ondertussen is er voor een lokale VM en uiterst eenvoudige oplossing: in de Vagrantfile, lijn 22 `v.gui = true` uit commentaar zetten, dan start de VM niet in de achtergrond op maar krijg je een gewoon Virtualboxvenster te zien. Van daaruit kan je dan een Powershellvenster openen en het installatiescript (dat zich in de synced folder C:\vagrant bevindt), laten lopen.  
 Deze noodoplossing natuurlijk geen oplossing voor productieservers op Azure.
 
-**Update**
-
-Het volgen van het stappenplan levert op mijn lokale Linuxbox een werkende en geprovisioneerde VM op. Ik heb het probleem dus niet kunnen repliceren.  
-(Xubuntu 10.12 + Vagrant 1.7.2 + Virtualbox 4.3)
 
 Het komt me voor dat het werken met **Ansible** eigenlijk het omgekeerde probleem oplevert: wat als je voor de disaster recovery alleen een Windows-host ter beschikking hebt of een Linux-host waar je geen installatierechten op hebt en geen Ansible?  
 
@@ -23,3 +19,16 @@ Dus de kwestie blijft: is er een mogelijkheid om het opzetten van alle stacks te
 Dit lijkt me zeer onwaarschijnlijk...  
 Indien dit niet zo is: moeten we dan niet als laatste toevlucht stappenplannen voor manuele installatie hebben om disaster recovery in alle omstandigheden mogelijk te maken?
 
+**Update**
+
+Het volgen van het stappenplan levert op mijn lokale Linuxbox een werkende en geprovisioneerde VM op. Ik heb het probleem dus niet kunnen repliceren.  
+(Xubuntu 10.12 + Vagrant 1.7.2 + Virtualbox 4.3)
+
+IIS install:
+![IIS] (/deelopdracht04/screenshots/xubuntu_iis_install.png "IIS")
+
+SQL Server Express:
+![SQL] ( /deelopdracht04/screenshots/xubuntu_sql_install.png "SQL")
+
+Web Deploy:
+![webdeploy] (/deelopdracht04/screenshots/xubuntu_webdeploy_install.png "wd")
