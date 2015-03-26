@@ -1,4 +1,4 @@
-# Voortgangsrapport week nn
+# Voortgangsrapport week 07
 
 * Groep: g07
 * Datum: 26/03/2015
@@ -32,7 +32,6 @@
 
 * Ziek
 
-![Afbeelding individueel rapport tijdregistratie] ()
 
 ### Birgitta Croux
 
@@ -54,6 +53,10 @@
 ### Natasha Heinkens
 ### Robbe Van Daele
 ### Birgitta Croux
+
+* Testen Java EE (liefst nog vandaag 26 maart)
+* Indien mogelijk de LAMP-stack opzetten zodat ik in het testrapport de ontbrekende screenshots kan aanvullen (liefst nog vandaag 26 maart)
+
 ### Hans Meuris
 
 ## Waar hebben jullie nog problemen mee?
@@ -61,6 +64,8 @@
 * Graag feedback over: [Disaster recovery Windows Server] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht04/reflectie_disrec_winserver.md)
 * Birgit: probleem bij de installatie van de laatste versie van Vagrant (1.7.2) op Xubuntu (12.10)  
   Geprobeerd vlg [mitchellh/vagrant]: `echo "1.1" > ~/.vagrant.d/setup_version` en `rm -rf ~/.vagrant.d`, beide zonder succes
+* LAMP-stack: oplevering is geblokkeerd door ontbrekende screenshots in testrapport
+* Java EE: oplevering is geblokkeerd door ontbrekend testrapport
 
 ## Feedback technisch luik
 
