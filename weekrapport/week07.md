@@ -1,7 +1,7 @@
 # Voortgangsrapport week nn
 
 * Groep: g07
-* Datum:
+* Datum: 26/03/2015
 
 | Student  | Aanw. | Opmerking |
 | :---     | :---  | :---      |
@@ -35,7 +35,9 @@
 
 ### Birgitta Croux
 
-* ...
+* Poging om probleem opzetten WISA-stack van op Linux-host te repliceren
+* Hiervoor: installatie van Linux
+* Reflectie disaster recovery
 
 [Afbeelding individueel rapport tijdregistratie]
 
