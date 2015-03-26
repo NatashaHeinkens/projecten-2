@@ -5,10 +5,10 @@
 
 | Student  | Aanw. | Opmerking |
 | :---     | :---  | :---      |
-| Natasha Heinkens |       |           |
-| Robbe Van Daele |       |           |
-| Birgitta Croux |       |           |
-| Hans Meuris |       |           |
+| Natasha Heinkens |   V    |           |
+| Robbe Van Daele |       |   Ziek?        |
+| Birgitta Croux |       |  TILE         |
+| Hans Meuris |   V    |           |
 
 ## Wat heb je deze week gerealiseerd?
 
@@ -74,6 +74,7 @@
 ## Feedback technisch luik
 
 ### Algemeen
+* labo 3 (netwerken), fysieke implementatie OK
 
 ### Natasha Heinkens
 ### Robbe Van Daele
