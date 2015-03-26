@@ -21,4 +21,4 @@
   * Let op dat je enkel de lijnen die gelden op de JEE-guest, overneemt.
 4. Maak folders voor elk van de roles, en pas de files daarin aan zoals op [github](https://github.com/HoGentTIN/ops-g-07/tree/master/Ansible/ansible/)
   * common voor de veelvoorkomende benodigde packages
-  * tomcat voor de java-server (tomcat dus)
+  * tomcat voor de java-server
