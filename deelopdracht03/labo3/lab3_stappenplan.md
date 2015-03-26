@@ -63,9 +63,9 @@ copy running-config startup-config
 ```
 * This will require confirmation. Simply hit the return key.
 
-`clock HH/MM/SS DAY MONTH YEAR`
+`clock set HH:MM:SS DAY MONTH YEAR`
 
- * With HH/MM/SS in numbers of hours/minutes/seconds, DAY in number of day in the month, MONTH by name and YEAR in 4-digit number  (e.g. 14:50:33 03 March 2015)
+ * With HH:MM:SS in numbers of hours:minutes:seconds, DAY in number of day in the month, MONTH by name and YEAR in 4-digit number  (e.g. 14:50:33 03 March 2015)
 
 * Open the terminal on PC-A
 
