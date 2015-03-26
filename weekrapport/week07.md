@@ -59,7 +59,7 @@
 ### Birgitta Croux
 
 * Testen Java EE (liefst nog vandaag 26 maart)
-* Indien mogelijk de LAMP-stack opzetten zodat ik in het testrapport de ontbrekende screenshots kan aanvullen (liefst nog vandaag 26 maart)
+
 
 ### Hans Meuris
 
