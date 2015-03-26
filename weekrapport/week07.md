@@ -24,7 +24,9 @@
 
 ### Natasha Heinkens
 
-* ...
+* LAMP heropgezet
+* Testrapport deelopdracht 4 geschreven.
+
 
 ![Afbeelding individueel rapport tijdregistratie] ( /weekrapport/week07_files/natasha_w07.png "natasha")
 
@@ -51,6 +53,8 @@
 
 ### Algemeen
 ### Natasha Heinkens
+* alles van do3 afronden
+* alles van do4 afronden
 ### Robbe Van Daele
 ### Birgitta Croux
 
