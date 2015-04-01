@@ -1,7 +1,0 @@
-// Als je een handige commando ofzo vindt, plaats ze dan maar hier. Als iedereen klaar is met zijn labo dan zal dit bestandje herwerkt worden naar een deftig verslag.
-
-//labo 1
-- show version: om systeem versie(IOS) te tonen.
-- show clock: om de huidige ingestelde klok te zien
-- enable: om in de privileg EXEC mode te gaan
-- clock set ? : om de klok in te stellen adhv '?' wat een verwachte waarde zal generen
