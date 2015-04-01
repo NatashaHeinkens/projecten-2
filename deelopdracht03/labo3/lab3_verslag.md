@@ -2,23 +2,23 @@
 
 ## Simulation ##
 
-### part 1 ###
+### Part 1 ###
 
-#### step 1: ####
+#### Step 1: ####
 Follow the instructions in the lab document.
 
-#### step 2 ####
+#### Step 2 ####
 See Appendix B
 
 
-### part 2 ###
+### Part 2 ###
 
-#### step 1 ####
+#### Step 1 ####
 * A/B: follow the instructions in the “stappenplan”.
 * C) Open terminal on PC-A and type “ping 192.168.0.3”
  * Pings were not successful due to the router not having been configured.
 
-#### step 2 ####
+#### Step 2 ####
 
 * A to M: follow the instructions in the “stappenplan”
 * N) Open terminal on PC-A and type “ping 192.168.0.3”
@@ -70,3 +70,62 @@ Reflection:
  * nothing changes. The address was not in use.
 
 ## Physical ##
+
+For one of the PC’s, instead of the recommended OS of Windows 7, vista or XP we used a portable Linux Fedora 7 booted from a cd provided to us by Mr Van Vreckem, and accessed the router and switch terminals from it directly through Fedora’s terminal with the command “screen /dev/ttyS0” after installing the “screen” application through executing “sudo yum install screen”.
+
+### Part 1 ###
+
+#### Step 1 ####
+
+We followed the topology diagram and set up and cabled the 2 pc’s, the router and the switch as shown. Additionally, we used a console cable to connect the router and the switch to one of the pc’s as was needed to configure them (if the report talks about configuring either of these devices, it is assumed the console cable is connected to that device at the time).
+
+#### Step 2 ####
+
+As per Appendix B of the lab, we reset the router by using the commands “enable”, “erase startup-config” and “reload” in that order on the router. By checking the switch with the “show flash” command, we concluded that it did not need to be reset since there was no VLAN file.
+
+### Part 2 ###
+
+#### Step 1 ####
+
+Since we did not use the OS used in the stappenplan for one of the pc’s, we deviated slightly from it. Instead, we opened the network settings directly through the settings menu in the top right corner of the screen, set the IP address, subnet mask and default gateway after enabling static IP use. The other pc was set up as was described.
+
+The pinging PC B from PC A did not work because the router had not yet been properly configured.
+
+#### Step 2 ####
+
+We followed the instructions of the lab as per Appendix A Step 2.
+
+When we tried to ping, we were unsuccessful. First, we ran into some troubles as the G0/1 port had not been given the no shut command and did not show up on the routing tables. After this was remedied we had a defective cable which was then replaced, allowing us to ping from PC B to G0/1 and from PC A to G0/0.
+
+We still could not ping from PC A to PC B or the other way around. First, we had to disable PC B’s wifi, as it used the wifi as default gateway instead of the one we had configured in its network settings.
+
+Another problem rose up as we concluded that PC A’s network settings would not properly be configured through the settings menu, and we used the commands “ip route add default via 192.168.1.1 dev em1” and “ip addr add 192.168.1.3/24 dev em1” to respectively add the default gateway and the IP address and subnet mask, with the /24 being the CIDR notation for the subnet mask 255.255.255.0.
+
+After that we had to disable both pc’s firewalls as they one-sidedly blocked pinging: With PC A’s firewall down, PC B could successfully ping to PC A, but PC A could not ping to PC B. This could also be remedied by allowing pings through the firewall.
+
+### Part 3 ###
+
+#### Step 1 ####
+
+#### Step 2 ####
+
+#### Step 3 ####
+
+#### Step 4 ####
+
+
+## Reflection ##
+1. If the G0/1 interface showed administratively down, what interface configuration command would you use to turn the interface up?
+
+We would navigate to the interface’s configuration through the following commands:
+```
+enable
+configure terminal
+int fast 0/1
+```
+
+And then we would run the `no shut` command.
+
+2. What would happen if you had incorrectly configured interface G0/1 on the router with an IP address of 192.168.1.2?
+
+This would not affect the network setup, as 192.168.1.2 is a valid IP address.
