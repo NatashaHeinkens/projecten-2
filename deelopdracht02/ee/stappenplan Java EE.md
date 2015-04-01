@@ -9,11 +9,11 @@
 #Stappenplan
 1. Zorg voor een werkende guest-machine (CentOS 7 Minimal install)
   1. Pas de vagrant_hosts.yml file aan als volgt:
-    `- name: gekozenNaam`
+    `- name: Proj15JEE`
     `(newline)  ip: xxx.xxx.xxx.xxx`
   2. (Opdat het ook zou werken op Windows-hosts) pas de ansible/inventory_dev file aan als volgt:
-    `gekozenNaam`
-  4. Voeg de minimal-box toe aan vagrant: `vagrant box add centos70-nocm`
+    `Proj15JEE`
+  4. Voeg de minimal-box toe aan vagrant: `vagrant box add centos70-nocm centos70-nocm.box`
 2. Breng de machine een eerste keer up: `vagrant up`
   * Je kan testen of de machine effectief draaiend is door `vagrant ssh` uit te voeren, dan krijg je een ssh verbinding naar de guest.
   * Verlaat de ssh verbinding weer met het `exit` commando
@@ -21,4 +21,6 @@
   * Let op dat je enkel de lijnen die gelden op de JEE-guest, overneemt.
 4. Maak folders voor elk van de roles, en pas de files daarin aan zoals op [github](https://github.com/HoGentTIN/ops-g-07/tree/master/Ansible/ansible/)
   * common voor de veelvoorkomende benodigde packages
-  * tomcat voor de java-server (tomcat dus)
+  * tomcat voor de java-server
+
+**opmerking: Dit stappenplan werkt enkel als je alles exact overneemt zonder eigen namen te gebruiken**

@@ -96,7 +96,7 @@
 #### Taak 6: 3x handleiding voor de gebruiker
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
-| Natasha Heinkens |  3 uur              |              |
+| Natasha Heinkens |  3 uur              |   2:34           |
 | Robbe Van Daele |               |              |
 | Birgitta Croux |     3 uur          |      2:20 uur        |
 | Hans Meuris |               |              |
