@@ -31,7 +31,7 @@
 * Labo 1 fysiek opgesteld, labo3 ook en getest
 
 
-![Afbeelding individueel rapport tijdregistratie](/weekrapport/week08_files/natasha_w08.jpg "Natasha")
+![Afbeelding individueel rapport tijdregistratie](/weekrapport/week08_files/Natasha_w08.jpg "Natasha")
 
 ### Robbe Van Daele
 
@@ -58,14 +58,14 @@
 
 ### Algemeen
 ### Natasha Heinkens
-  * In de paasvakantie alles afwerken (DO2/3/4) en optimaliseren van documenten (schrijffouten uithalen, beter verwoorden, etc.)
-### Robbe Van Daele
-### Birgitta Croux
-### Hans Meuris
+  * In de paasvakantie alles afwerken (DO2/3/4) en optimaliseren van documenten (schrijffouten uithalen, beter verwoorden, etc.) 
+### Robbe Van Daele  
+### Birgitta Croux  
+### Hans Meuris  
 
 ## Waar hebben jullie nog problemen mee?
 
-* Java ee DO2 vlot niet. Stappenplan is niet volledig, testplan en testrapport kunnen nog niet aangemaakt worden.
+* Java ee DO2 vlot niet. Stappenplan is niet volledig, testplan en testrapport kunnen nog niet aangemaakt worden.  
 
 ## Feedback technisch luik
 
