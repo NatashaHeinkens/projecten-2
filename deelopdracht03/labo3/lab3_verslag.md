@@ -133,11 +133,11 @@ After this, we used the `show version` command on the switch.
 * What is the name of the IOS image that the switch is running?
  * Cisco IOS Software, 2960S Software (C2960S-UNIVERSAL-M), Version 12.2(53)SE2, RELEASE SOFTWARE (fc3)
 * How much dynamic random access memory (DRAM) does the switch have?
- * 
+ * (cannot find any NVRAM in the information given).
 * How much nonvolatile random-access memory (NVRAM) does the switch have?
- * 
+ * 64 Kb.
 * What is the model number of the switch?
- * 
+ * "WS-C2960-24TC-L"
 
 #### Step 2 ####
 
