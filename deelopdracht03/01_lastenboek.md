@@ -71,6 +71,7 @@
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |    5u           |              |
+| Birgit Croux (testplan) | 00:45 | 1:14 |
 
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
@@ -101,10 +102,18 @@
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |       15 min        |      5 min        |
 | Robbe Van Daele |               |              |
-| Birgitta Croux |               |              |
+| Birgitta Croux |       00:40        |              |
 | Hans Meuris |               |              |
 
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
+
+#### Cheat sheet opstellen
+| Student  | Geschat | Gerealiseerd |
+| :---     |    ---: |         ---: |
+| Natasha Heinkens |               |              |
+| Robbe Van Daele |               |              |
+| Birgitta Croux |       00:40        |      00:57        |
+| Hans Meuris |               |              |
 
 #### Labo 1 testen
 | Student  | Geschat | Gerealiseerd |
