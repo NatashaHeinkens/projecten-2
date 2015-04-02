@@ -59,8 +59,35 @@ Daar we geen administratie-rechten hebben onder windows op de klas-pc's, hebben 
 --NOOT-- Vanaf hier voeren we alles uit in Packet tracer omdat in de klas zowel de serie 2940 als de serie 2960 switches slechts gedeeltelijke uitvoer gaven.  
 ![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/uitvoer.png "gedeeltelijke uitvoer")
 
+6. Basic switch instellingen
+ * Om naar de geprivilegeerde EXEC mode te gaan, gebruik `enable`
+ * Om naar de configuratie mode te gaan, gebruik `configure terminal`
+ * Om de hostnaam aan te passen, gebruik `hostname S1`
+ * Om dns lookups bij foute commando's uit te schakelen, gebruik `no ip domain-lookup`
+ * pas de paswoorden aan:
+  * `enable secret class`
+  * `line con 0`
+  * `password cisco`
+  * `login`
+  * `exit`
+ * Om een MOTD in te stellen, doe:
+  * `banner motd #`
+  * `Unauthorized access is strictly prohibited and prosecuted to the full extent of the law. #`
+  * `exit`
+ * Om de running-config naar de startup-config te schrijven, doe `copy running-config startup-config`
+ * Druk op enter om te bevestigen  
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ip-S1.png "In- en uitvoer tot hier")  
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ip-S1-01.png "In- en uitvoer tot hier")
+ * Om de config te controleren, doe `show running-config`  
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ip-s1-02.png "Uitvoer conf")  
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ip-s1-03.png "Uitvoer conf")  
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ip-s1-04.png "Uitvoer conf")
 
+7. Status van de interfaces tonen
+ * Voer het commando uit: `show ip interface brief`
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ip-S1-showinterface00.png "Uitvoer if")  
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ip-S1-showinterface01.png "Uitvoer if")  
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ip-S1-showinterface02.png "Uitvoer if")
 
-
-Hier een afbeelding
-![alt] (https://github.com/HoGentTIN/ops-g-07/tree/master/deelopdracht03/labo2/screens/ip_PCB.png "stap5")
+8. Doe alle stappen van de switch, ook op Switch2
+9. Klaar.
