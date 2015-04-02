@@ -18,5 +18,5 @@
 
 4. OK: folders voor elke role zijn aangemaakt  
     Map roles overgenomen uit /ansible op github  
-    ![alt] (/deelopdracht02/ee/screens/roles._eepng "roles")
+    ![alt] (/deelopdracht02/ee/screens/roles_ee.png "roles")
 
