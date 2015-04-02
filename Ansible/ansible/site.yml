@@ -22,5 +22,5 @@
     tomcat_hostname: localhost
   roles:
     - common
-    - java
     - tomcat
+    - miscJEE
