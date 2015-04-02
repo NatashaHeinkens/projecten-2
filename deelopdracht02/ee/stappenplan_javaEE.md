@@ -23,5 +23,6 @@
   * common voor de veelvoorkomende benodigde packages
   * tomcat voor de java-server
   * miscJEE voor overige
+5. Surf naar de opgegeven ip adres en voeg ':8080' aan het einde toe. Indien je het stappenplan succesvol hebt overlopen krijg je nu de testpagina van tomcat te zien. 
 
 **opmerking: Dit stappenplan werkt enkel als je alles exact overneemt zonder eigen namen te gebruiken**
