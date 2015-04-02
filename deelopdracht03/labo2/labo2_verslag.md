@@ -53,7 +53,10 @@ Daar we geen administratie-rechten hebben onder windows op de klas-pc's, hebben 
 5. Console-connectie naar switches
   * Zorg ervoor dat de console-kabel verbonden is tussen de COM-poort van de computer en de Console poort van de switch
   * In windows is Tera Term nodig om de connectie tot stand te brengen.
---NOOT-- Vanaf hier voeren we alles uit in Packet tracer omdat in de klas zowel de serie 2940 als de serie 2960 switches slechts gedeeltelijke uitvoer gaven.
+  * In Linux, open een terminal en voer uit `#screen /dev/ttyS0`
+ 
+
+--NOOT-- Vanaf hier voeren we alles uit in Packet tracer omdat in de klas zowel de serie 2940 als de serie 2960 switches slechts gedeeltelijke uitvoer gaven.  
 ![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/uitvoer.png "gedeeltelijke uitvoer")
 
 
