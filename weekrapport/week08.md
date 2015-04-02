@@ -5,10 +5,10 @@
 
 | Student  | Aanw. | Opmerking |
 | :---     | :---  | :---      |
-| Natasha Heinkens |       |           |
-| Robbe Van Daele |       |           |
-| Birgitta Croux |       |           |
-| Hans Meuris |       |           |
+| Natasha Heinkens |   V    |           |
+| Robbe Van Daele |    V   |           |
+| Birgitta Croux |   V    |           |
+| Hans Meuris |   V    |           |
 
 ## Wat heb je deze week gerealiseerd?
 
@@ -73,6 +73,8 @@
 ## Feedback technisch luik
 
 ### Algemeen
+* WISA op Azure OK
+* feedback op Github materiaal volgt
 
 ### Natasha Heinkens
 ### Robbe Van Daele
