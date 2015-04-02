@@ -17,4 +17,4 @@
   * De folder voor de benodigde packages is aangemaakt.
   * De folder voor tomcat is aangemaakt.  
  
-**Stap 5** De testpagina van tomcat is vekregen.
+**Stap 5** De testpagina van tomcat is verkregen.
