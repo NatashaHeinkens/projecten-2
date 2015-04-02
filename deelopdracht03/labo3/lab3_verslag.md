@@ -85,7 +85,7 @@ As per Appendix B of the lab, we reset the router by using the commands `enable`
 
 ![Image resetting router] ( https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo3/screenshots/router_reset.png "resetting router")
 
-By checking the switch with the `show flash` command, we concluded that it did not need to be reset since there was no VLAN file.
+By checking the switch with the `show flash` command, we concluded that it did not need to be reset since there was no VLAN file. We deleted the startup-configuration and restarted the switch to be sure.
 
 ![Image resetting switch] ( https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo3/screenshots/switch_reset.png "resetting switch")
 
