@@ -39,8 +39,8 @@ Daar we geen administratie-rechten hebben onder windows op de klas-pc's, hebben 
 
 ![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ip-PCA00.png "All settings")
 ![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ip-PCA02.png "Network")
-![alt] (https://github.com/HoGentTIN/ops-g-07/tree/master/deelopdracht03/labo2/screens/ip-PCA03.png "Wired")
-![alt] (https://github.com/HoGentTIN/ops-g-07/tree/master/deelopdracht03/labo2/screens/ip_PCA04.png "IPv4")
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ip-PCA03.png "Wired")
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ip-PCA04.png "IPv4")
 
 
 
