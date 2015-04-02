@@ -1,6 +1,6 @@
 ##Testplan Labo 1
 
-Auteur: Birgit Croux
+
 
 ###Deel 1: Toegang tot een Cisco-switch via Serial Console Port
 
