@@ -22,5 +22,6 @@
 4. Maak folders voor elk van de roles, en pas de files daarin aan zoals op [github](https://github.com/HoGentTIN/ops-g-07/tree/master/Ansible/ansible/)
   * common voor de veelvoorkomende benodigde packages
   * tomcat voor de java-server
+  * miscJEE voor overige
 
 **opmerking: Dit stappenplan werkt enkel als je alles exact overneemt zonder eigen namen te gebruiken**
