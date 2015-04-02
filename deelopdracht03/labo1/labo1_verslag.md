@@ -24,7 +24,7 @@ Vooraleer men de klok kan aanpassen moet men in de privileged EXEC mode gaan men
   * `clock set [uur] [maand-dag] [jaar]` : Het formaat van het jaar is YYYY
 Om te verifiëren of de klok weldegelijk is ingesteld geeft men het commando `show clock` opnieuw in.
 De klok is ingesteld.  
-![alt](https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo1/Screenshots/show_clock.jpg "show clock")
+![alt](https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo1/Screenshots/set_clock.jpg "set clock")
 
 ##Deel 3 (optioneel): Toegang tot een Cisco-switch via Mini-USB console cable  
 
