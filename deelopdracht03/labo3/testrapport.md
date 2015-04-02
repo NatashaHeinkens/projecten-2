@@ -19,7 +19,7 @@
   * Check.
   * Check.
   * Check.
-3. Check
+3. Check  
 ![alt](https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo3/screenshots/ping.jpg "ping")  
 
 ## Deel 3: Apparaatinformatie weergeven.
