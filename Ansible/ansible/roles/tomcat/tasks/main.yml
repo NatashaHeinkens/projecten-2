@@ -7,12 +7,17 @@
     - tomcat-webapps
     - tomcat-admin-webapps
     
-- name: Download tomcat-tools
-  command: "cd /tmp/"
-  command: "wget http://apache.cu.be/tomcat/tomcat-7/v7.0.59/bin/apache-tomcat-7.0.59.tar.gz"
-  command: "tar xzf apache-tomcat-7.0.59.tar.gz"
-  command: "sudo mv apache-tomcat-7.0.59 /usr/local/tomcat7"
+- name: Download tomcat-tools pt1
+  command: "sudo mkdir /usr/local/tomcat7"
+  
+- name: Download tomcat-tools pt2
+  command: "sudo cd /usr/local/tomcat7"
+  
+- name: Download tomcat-tools pt3
+  command: "sudo wget http://apache.cu.be/tomcat/tomcat-7/v7.0.59/bin/apache-tomcat-7.0.59.tar.gz"
+  
+- name: Download tomcat-tools pt4
+  command: "sudo tar xzf apache-tomcat-7.0.59.tar.gz"
 
-- name: Tomcat autostarten
-  command: "sudo echo 'bash /usr/local/tomcat7/bin/startup.sh' > /etc/init.d/startTomcat"
-  command: "sudo chmod +x /etc/init.d/startTomcat"
+- name: Tomcat autostarten 
+  command: "sudo service tomcat start"
