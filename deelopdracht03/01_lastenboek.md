@@ -63,17 +63,17 @@
 
 ### Kanban-bord
 
-![alt] ( https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/huboard_do3.png "kanban do 3")
+![alt] ( /deelopdracht03/huboard_do3.png "kanban do 3")
 
 ### Tijdbesteding
 
 #### Labo 1
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
-| Natasha Heinkens |    5u           |              |
+| Natasha Heinkens |    5u           |        1:55      |
 | Birgit Croux (testplan) | 00:45 | 1:14 |
 
-(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
+![alt] (/deelopdracht03/lastenboek_files/tijdsbesteding_lab1.png "lab 1")
 
 #### Labo 2
 | Student  | Geschat | Gerealiseerd |
