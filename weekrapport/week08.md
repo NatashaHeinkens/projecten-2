@@ -1,7 +1,7 @@
 # Voortgangsrapport week 08
 
 * Groep: g07
-* Datum:
+* Datum: 02/04/2015
 
 | Student  | Aanw. | Opmerking |
 | :---     | :---  | :---      |
@@ -26,9 +26,12 @@
 
 ### Natasha Heinkens
 
-* ...
+* LAMP stappenplan aagepast
+* testplan en testrapport java ee proberen opstellen (onvolledig stappenplan)
+* Labo 1 fysiek opgesteld, labo3 ook en getest
 
-[Afbeelding individueel rapport tijdregistratie]
+
+![Afbeelding individueel rapport tijdregistratie](/weekrapport/week08_files/natasha_w08.jpg "Natasha")
 
 ### Robbe Van Daele
 
@@ -43,7 +46,7 @@
 * Deployment demo-app WISA-stack via package uitgewerkt (deelopdracht 4 -> deployment los van Visual Studio/Windowshost)
 * 
 
-![Afbeelding individueel rapport tijdregistratie] (//weekrapport/week08_files/birgit_w08.png "birgit")
+![Afbeelding individueel rapport tijdregistratie] (/weekrapport/week08_files/birgit_w08.png "birgit")
 
 ### Hans Meuris
 
@@ -55,14 +58,14 @@
 
 ### Algemeen
 ### Natasha Heinkens
+  * In de paasvakantie alles afwerken (DO2/3/4) en optimaliseren van documenten (schrijffouten uithalen, beter verwoorden, etc.)
 ### Robbe Van Daele
 ### Birgitta Croux
 ### Hans Meuris
 
 ## Waar hebben jullie nog problemen mee?
 
-* ...
-* ...
+* Java ee DO2 vlot niet. Stappenplan is niet volledig, testplan en testrapport kunnen nog niet aangemaakt worden.
 
 ## Feedback technisch luik
 
