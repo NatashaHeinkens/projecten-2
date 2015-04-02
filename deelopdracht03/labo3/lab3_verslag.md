@@ -160,24 +160,25 @@ We used the `show interface g0/1` command on the router.
 ![Image show interface g0/1] ( https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo3/screenshots/show_interface_g01.png "show interface g0/1")
 
 * What is the operational status of the G0/1 interface?
- * 
+ * The G0/1 interface is "up".
 * What is the Media Access Control (MAC) address of the G0/1 interface?
- * 
+ * The MAC address is "0022.55a1.924b"
 * How is the Internet address displayed in this command?
- * 
+ * In the CIDR notation: "192.168.1.1/24"
 
 #### Step 4 ####
 
 We used the `show interface brief` command on the router.
 
-![Image show interface brief] ( https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo3/screenshots/show_ip_interface_brief.png "show interface brief")
+![Image show interface briefrouter] ( https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo3/screenshots/show_ip_interface_brief_router.png "show interface brief router")
 
 After this, we used the `show interface brief` command on the switch.
 
+![Image show interface brief switch] ( https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo3/screenshots/show_ip_interface_brief_switch.png "show interface brief switch")
 
+##### Reflection #####
 
-## Reflection ##
-1. If the G0/1 interface showed administratively down, what interface configuration command would you use to turn the interface up?
+* If the G0/1 interface showed administratively down, what interface configuration command would you use to turn the interface up?
 
 We would navigate to the interface’s configuration through the following commands:
 ```
@@ -185,9 +186,8 @@ enable
 configure terminal
 int fast 0/1
 ```
-
 And then we would run the `no shut` command.
 
-2. What would happen if you had incorrectly configured interface G0/1 on the router with an IP address of 192.168.1.2?
+* What would happen if you had incorrectly configured interface G0/1 on the router with an IP address of 192.168.1.2?
 
 This would not affect the network setup, as 192.168.1.2 is a valid IP address.
