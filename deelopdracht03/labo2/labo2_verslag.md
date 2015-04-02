@@ -43,6 +43,20 @@ Daar we geen administratie-rechten hebben onder windows op de klas-pc's, hebben 
 ![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ip-PCA04.png "IPv4")
 
 
+4. Snelle test (ping)
+  * Vanop de terminal (Linux) of command prompt (Windows), voer ping 192.168.1.[10 of 11] uit.
+   * Merk op dat je hier het juiste ip kiest, dus hetgene van de andere pc dan degene waarop je werkt (10 vanop PCB, 11 vanop PCA)
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ping%20_PCA.png "Linux-host")
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ping_PCB.png "Windows-host")
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/ip-PCB00.png "Packet tracer")
+
+5. Console-connectie naar switches
+  * Zorg ervoor dat de console-kabel verbonden is tussen de COM-poort van de computer en de Console poort van de switch
+  * In windows is Tera Term nodig om de connectie tot stand te brengen.
+--NOOT-- Vanaf hier voeren we alles uit in Packet tracer omdat in de klas zowel de serie 2940 als de serie 2960 switches slechts gedeeltelijke uitvoer gaven.
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht03/labo2/screens/uitvoer.png "gedeeltelijke uitvoer")
+
+
 
 
 Hier een afbeelding
