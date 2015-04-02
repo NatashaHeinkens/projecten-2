@@ -67,6 +67,11 @@
 
 ### Tijdbesteding
 
+####Lastenboek
+| Student  | Geschat | Gerealiseerd |
+| :---     |    ---: |         ---: |
+| Natasha Heinkens |    1:00          |        00:51      |
+
 #### Labo 1
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
