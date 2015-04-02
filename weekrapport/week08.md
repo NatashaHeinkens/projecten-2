@@ -42,9 +42,9 @@
 ### Birgitta Croux
 
 * Opzetten JavaEE-stack volgens stappenplan
-* Testrapport JavaEE nog niet toegevoegd: Testplan moest nog bijgewerkt worden
+* Testrapport JavaEE toegevoegd maar testplan moest nog bijgewerkt worden
 * Deployment demo-app WISA-stack via package uitgewerkt (deelopdracht 4 -> deployment los van Visual Studio/Windowshost)
-* 
+* Eerste exploratie Owncloud-docs
 
 ![Afbeelding individueel rapport tijdregistratie] (/weekrapport/week08_files/birgit_w08.png "birgit")
 
@@ -61,6 +61,9 @@
   * In de paasvakantie alles afwerken (DO2/3/4) en optimaliseren van documenten (schrijffouten uithalen, beter verwoorden, etc.) 
 ### Robbe Van Daele  
 ### Birgitta Croux  
+
+* DO5: owncloud research
+
 ### Hans Meuris  
 
 ## Waar hebben jullie nog problemen mee?
