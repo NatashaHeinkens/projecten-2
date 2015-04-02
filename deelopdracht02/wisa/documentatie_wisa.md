@@ -5,7 +5,7 @@
 Ik heb zoals je weet [dit artikel][tutorial virtualisatie] gevolgd. Het maakt gebruik van [deze scripts] [joefitzgerald]. Er zit ook al een basis-vagrantfile bij die werkt met de box die het script opzet, en die we verder kunnen aanpassen.
 
 Je hebt nodig:
-* het archief [packer-windows] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/wisa/packer-windows.zip) (uitpakken)
+* de map [packer-windows] (/deelopdracht02/wisa/packer-windows) + inhoud
 * als je geen evaluatieversie wil installeren, maar een eigen iso wil gebruiken:
    * deze iso
    * een md5-checksum voor deze iso
@@ -37,21 +37,24 @@ Eigen iso gebruiken of windows updates overslaan: zie onderaan.
 
 ###Gebruik van de Vagrantbox: handleiding voor de gebruiker
 
+####Box opstarten
 Je hebt nodig:
 * De Vagrantbox aangemaakt in het stappenplan hierboven.
-* Het archief [vagrant-windows] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/wisa/vagrant-windows.zip), uitgepakt (bestanden Vagrantfile en install.ps1 ) in een projectmap.
+* De bestanden uit de map [vagrant-windows] (/deelopdracht02/wisa/vagrant-windows) (bestanden Vagrantfile en install.ps1 ) in een projectmap.
 
 1. [Download] (http://www.vagrantup.com/downloads) en [installeer] (http://docs.vagrantup.com/v2/installation/index.html) Vagrant.
 2. Open een command prompt en navigeer naar de folder waar je windows_2012_r2_virtualbox.box hebt opgeslagen en typ `vagrant box add WinServer2012R2 .\windows_2012_r2_virtualbox.box`.  
-   De naam WinServer2012R2 is belangrijk, neem deze exact over inclusief hoofdletters.
+   De naam WinServer2012R2 is belangrijk, neem deze exact over inclusief hoofdletters. Deze naam moet hetzelfde zijn als de boxnaam in de vagrantfile: `config.vm.box = "WinServer2012R2"` 
 3. Controleer of stap 2 succesvol is geweest met het commando `vagrant box list`. In deze lijst staat nu een box met de juiste naam.
-4. Navigeer naar de folder waar de bestanden uit het archief test-project staan en voer het commando `vagrant up` in. Nu wordt een virtuele machine opgezet en IIS en SQL Server worden geïnstalleerd. Dit kan dus even duren.
+4. Navigeer naar de folder waar de bestanden uit de map vagrant-windows staan en voer het commando `vagrant up` in. Nu wordt een virtuele machine opgezet en IIS en SQL Server worden geïnstalleerd. Dit kan dus even duren.
 5. Resultaat: een VM die in de achtergrond draait onder VirtualBox. 
 
-
+####Box gebruiken
 De folder waarin de Vagrantfile staat, is op de VM gemount in de map C:\vagrant. Er is port forwarding voorzien van poort 8080 (host) naar poort 80 (guest). Deployment gebeurt naar 127.0.0.1:8080 met l/p vagrant/vagrant. Na deployment van de webapplicatie kan je op de host surfen naar http://127.0.0.1:8080 om de site, die je serveert op de guest, te bekijken.
 
-Je kan de desktop van de VM oproepen met het commando `vagrant rdp`. Inloggen met l/p: vagrant/vagrant.
+Je kan de desktop van de VM oproepen met het commando `vagrant rdp`. Inloggen met l/p: vagrant/vagrant.  
+Vanop een Linux-host kan je niet rdp'en naar de machine (tenzij je daarvoor de juiste software, zoals rdesktop, installeert). In plaats daarvan kan je de VM zichtbaar draaien (een vm-venster zoals je krijgt wanneer je een VM opstart in VirtualBOX zelf). Werkwijze:  
+* in de Vagrantfile: uncomment de lijn `v.gui = true`
 
 Je kan de box afsluiten met: 
 * `vagrant suspend` (inhoud van het geheugen van de box wordt bijgehouden, dit neemt dus meer plaats in maar de box hervatten gaat wel sneller)
@@ -90,7 +93,7 @@ Eens de VM draait, kan je ermee verbinden door onderaan in het managementportaal
 ###IIS en SQL Server Express installeren
 
 1. Maak een rdp-verbinding met de VM.
-2. Copy-paste het script install.ps1 (uit het archief vagrant-windows, zie boven) naar de VM.
+2. Copy-paste het script install.ps1 (uit de map vagrant-windows, zie boven) naar de VM.
 3. Open op de VM Powershell als administrator en navigeer naar de plaats waar je het script hebt opgeslagen.
 4. Voer het commando `.\install.ps1` uit.
 
