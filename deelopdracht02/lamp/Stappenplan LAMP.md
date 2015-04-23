@@ -142,6 +142,7 @@ Succes!
 **Stap 2.** Maak een vagrantfile aan met het commando: `vagrant init LAMP`  
 
 **Stap 3.** Start de machine op met het commando: `vagrant up`  
+		((doordat vagrant init zelf een vagrantfile heeft gemaakt is de naam van de machine 'default', hier kan je vagrant up ook gebruiken als: `vagrant up default`))
 
 **Stap 4.** De machine is up and running. Om te controleren als alles correct is verlopen kunnen we eens kijken als we een SSH verbinding hebben.(`exit` om de verbinding te verbreken) `vagrant SSH`  
 
