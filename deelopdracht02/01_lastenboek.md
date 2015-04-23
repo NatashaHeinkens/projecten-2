@@ -38,36 +38,34 @@
 #### Taak 1: 3x Testplan opstellen: LAMP, JavaEE, WISA
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
-| Natasha Heinkens |  2uur 30min              |              |
-| Hans Meuris |               |              |
+| Natasha Heinkens |  2 uur 30 min              |              |
+| Hans Meuris | 1 uur  |  35 min |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
 #### Taak 2a: Opzetten en configureren van LAMP stack- Implementeren
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Robbe Van Daele |               |              |
-| Hans Meuris |               |              |
+| Hans Meuris | 6 uur  |  4 uur  |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
 #### Taak 2b: Opzetten en configureren van LAMP stack- Security
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Robbe Van Daele |               |              |
-| Hans Meuris |               |              |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
 #### Taak 3a: Opzetten en configureren van JavaEE Stack- Implementeren
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Robbe Van Daele |               |              |
-| Hans Meuris |               |              |
+| Hans Meuris | 6 uur  |  4 uur 45 min  |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
 #### Taak 3b: Opzetten en configureren van JavaEE Stack- Security
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Robbe Van Daele |               |              |
-| Hans Meuris |               |              |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
 #### Taak 4a: Opzetten en configureren van WISA Stack- Implementeren
@@ -90,7 +88,6 @@
 | Natasha Heinkens |      5 uur          |              |
 | Robbe Van Daele |               |              |
 | Birgitta Croux |       9 uur        |       5 uur       |
-| Hans Meuris |               |              |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
 #### Taak 6: 3x handleiding voor de gebruiker
@@ -99,7 +96,6 @@
 | Natasha Heinkens |  3 uur              |   2:34           |
 | Robbe Van Daele |               |              |
 | Birgitta Croux |     3 uur          |      2:20 uur        |
-| Hans Meuris |               |              |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
 #### Taak 7: 3x testen uitvoeren
@@ -107,5 +103,5 @@
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |  15 uur              |              |
 | Robbe Van Daele |               |              |
-| Hans Meuris |               |              |
+| Hans Meuris | 1 uur  |  15 minuten  |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
