@@ -127,12 +127,37 @@ Als alles goed is, krijg je nu groen licht (Configuration OK). Gebruikersmenu re
 
 //TODO 
  
-###Interne VM bereikbaar maken vanaf het internet
+###Interne VM bereikbaar maken: VPN lokaal netwerk - Azure
 
-//TODO
+####Virtueel netwerk aanmaken
+Azure Management Portal > Networks > Create a new virtual network
 
-Om ons interne netwerk van VM's internettoegang te geven, hebben we één netwerkinterface van onze DC als NAT-interface ingesteld. Die interface krijgt een IP toebedeeld van de interne DHCP-server van VirtualBox, tenzij dit anders is ingesteld.
-Om onze DC bereikbaar te maken van buitenaf (vanaf de host of vanaf het internet) voor de LDAP-lookup zetten we port forwarding op.
+![Vnet stap 1] ( /deelopdracht05/owncloud/owncloud_files/vnet_stap1.png "naam en locatie vnet" )  
+
+DNS-sectie blanco: Microsoft DNS-service wordt gebruikt. Dit betekent: geen name resolution van het interne netwerk naar het virtuele netwerk (dus ip-adressen gebruiken).
+![Vnet stap 2] ( /deelopdracht05/owncloud/owncloud_files/vnet_stap2.png "dns en point-to-site" )  
+
+Adresruimte voor het virtuele netwerk.  
+Deze mag niet overlappen met het interne netwerk. De VPN-clients krijgen een adres uit deze range toegewezen, verkeer van op de client naar een adres uit dit bereik wordt omgeleid naar de VPN. Dus: als de range overlapt zijn lokale clients mogelijk niet meer bereikbaar.
+Je kan het netwerkadress aanpassen in de kolom 'Starting IP'.  
+![Vnet stap 3] ( /deelopdracht05/owncloud/owncloud_files/vnet_stap3.png "adresbereik" )
+
+10.0.0.0 in stap 3 levert in stap 4 het bereik 10.0.1.0/24. Klik op `Add gateway subnet`.    
+![Vnet stap 4] ( /deelopdracht05/owncloud/owncloud_files/vnet_stap4.png "address spaces" )
+
+Resultaat (tab Networks):  
+![vnet aangemaakt] ( /deelopdracht05/owncloud/owncloud_files/created_vnet.png "vnet aangemaakt")
+
+Klik op de naam van het netwerk > Dashboard om naar zijn Dashboard te gaan. Je ziet een foutmelding (The gateway was not created). Klik onderaan op `Create gateway`. Het aanmaken kan enkele minuten duren.
+
+![create gateway] ( /deelopdracht05/owncloud/owncloud_files/vnet_stap5.png "create gateway" )
+
+
+Referenties:  
+* https://msdn.microsoft.com/en-us/library/azure/dn133792.aspx
+* https://msdn.microsoft.com/en-us/library/azure/09926218-92ab-4f43-aa99-83ab4d355555#BKMK_VNETDNS
+
+
 
 
 
