@@ -2,10 +2,10 @@
 
 ###Deliverables
 
-*VirtualBox VM's voor de gerealiseerde servers
-*OwnCloud-platform op Microsoft Azure
-*Testplan en -rapport
-*Gedetailleerde documentatie: installatieprocedures, handleidingen, scripts,...
+* VirtualBox VM's voor de gerealiseerde servers
+* OwnCloud-platform op Microsoft Azure
+* Testplan en -rapport
+* Gedetailleerde documentatie: installatieprocedures, handleidingen, scripts,...
 
 ###Deeltaken
 
