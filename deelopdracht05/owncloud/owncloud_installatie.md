@@ -147,32 +147,74 @@ Als alles goed is, krijg je nu groen licht (Configuration OK). Gebruikersmenu re
 
 //TODO 
  
-###Interne VM bereikbaar maken: VPN lokaal netwerk - Azure
+###VPN lokaal netwerk - Azure
 
-####Virtueel netwerk aanmaken
-Azure Management Portal > Networks > Create a new virtual network
+####Azure: Virtueel netwerk aanmaken en bereikbaar maken
+
+Azure Management Portal > kolom links `Networks` > 
+* `Create a new virtual network` (alleen zichtbaar als je nog geen Virtual Networks hebt gedefinieerd)
+* of onderaan `+ New` > `Custom Create`
+
+#####Stap 1: Naam en locatie
+
+* **Name**: kies een naam (_AzureDevNetwerk_)
+* **Location**: kies `West Europe`. De locatie bepaalt waar VM's die deel uitmaken van het netwerk worden gehuisvest.  
+Let op! Alleen VM's die aangemaakt zijn met **dezelfde regio** als het virtueel netwerk kunnen aan het netwerk toegevoegd worden!
 
 ![Vnet stap 1] ( /deelopdracht05/owncloud/owncloud_files/vnet_stap1.png "naam en locatie vnet" )  
 
-DNS-sectie blanco: Microsoft DNS-service wordt gebruikt. Dit betekent: geen name resolution van het interne netwerk naar het virtuele netwerk (dus ip-adressen gebruiken).
+#####Stap 2: DNS en soort VPN
+
+* **DNS-sectie** blanco: Microsoft DNS-service wordt gebruikt. Dit betekent: geen name resolution van het interne netwerk naar het virtuele netwerk (dus ip-adressen gebruiken).  
+* **Connectivity**: point-to-site aanvinken
+
+Betekenis point-to-site VPN: verbindt specifieke client(s) van het interne netwerk via VPN met het Azure-vnet.
+* er moet een rootcertificaat toegevoegd worden aan het vnet (zie onder)
+* elke client moet een apart clientcertificaat krijgen, aangemaakt o.b.v. het rootcertificaat (zie onder)
+
+Waarom point-to-site en niet site-to-site? Site-to-site verbindt een volledig lokaal netwerk met het Azure-vnet. Clients hebben dus niet allemaal een apart certificaat nodig. Maar: je hebt een VPN-machine of Windows Server geconfigureerd voor RRAS (Routing and Remote Access Service) nodig die een publiek IPv4-adres heeft en niet achter NAT zit. Dit hebben we niet en hebben we ook niet nodig. Alleen de DC moet immers via VPN communiceren met de LDAP-backend op de Owncloud-server. Alle andere clients (gebruikers) hebben alleen de (webgeserveerde) front-end nodig.
+
 ![Vnet stap 2] ( /deelopdracht05/owncloud/owncloud_files/vnet_stap2.png "dns en point-to-site" )  
 
-Adresruimte voor het virtuele netwerk.  
-Deze mag niet overlappen met het interne netwerk. De VPN-clients krijgen een adres uit deze range toegewezen, verkeer van op de client naar een adres uit dit bereik wordt omgeleid naar de VPN. Dus: als de range overlapt zijn lokale clients mogelijk niet meer bereikbaar.
-Je kan het netwerkadress aanpassen in de kolom 'Starting IP'.  
+#####Stap 3: Point-to-Site Connectivity configureren
+
+**Adresruimte** voor het virtuele netwerk aangeven.  
+Deze mag niet overlappen met het interne netwerk. De VPN-clients krijgen een adres uit deze range toegewezen, verkeer van op de client naar een adres uit dit bereik wordt omgeleid naar de VPN. Dus: als de range overlapt zijn lokale clients mogelijk niet meer bereikbaar.  
+Je kan het netwerkadres aanpassen in de kolom 'Starting IP'.  
 ![Vnet stap 3] ( /deelopdracht05/owncloud/owncloud_files/vnet_stap3.png "adresbereik" )
 
-10.0.0.0 in stap 3 levert in stap 4 het bereik 10.0.1.0/24. Klik op `Add gateway subnet`.    
+#####Stap 4: Overzicht adresruimte en subnet voor gateway aanmaken
+
+10.0.0.0 in stap 3 levert in stap 4 het bereik 10.0.1.0/24. Klik op `Add gateway subnet`. Het voorgestelde subnet is OK.
+
 ![Vnet stap 4] ( /deelopdracht05/owncloud/owncloud_files/vnet_stap4.png "address spaces" )
 
-Resultaat (tab Networks):  
+Resultaat (tab Networks)
+
 ![vnet aangemaakt] ( /deelopdracht05/owncloud/owncloud_files/created_vnet.png "vnet aangemaakt")
 
-Klik op de naam van het netwerk > Dashboard om naar zijn Dashboard te gaan. Je ziet een foutmelding (The gateway was not created). Klik onderaan op `Create gateway`. Het aanmaken kan enkele minuten duren.  
-Let op! Als het wel héél lang lijkt te duren, lijkt alsof het aanmaken is vastgelopen: waarschijnlijk is de pagina gecached in je browser. Log eens uit, herstart de browser en log opnieuw in.
+#####Stap 5: Gateway aanmaken
+
+Klik op de naam van het netwerk > Dashboard om naar zijn Dashboard te gaan. Je ziet een foutmelding (The gateway was not created). Klik onderaan op `Create gateway`. Het aanmaken kan enkele minuten duren.
 
 ![create gateway] ( /deelopdracht05/owncloud/owncloud_files/vnet_stap5.png "create gateway" )
 
+Let op! Als het wel héél lang lijkt te duren, lijkt alsof het aanmaken is vastgelopen: waarschijnlijk is de pagina gecached in je browser. Log eens uit, herstart de browser en log opnieuw in.
+
+Resultaat: de gateway is aangemaakt, hij heeft een IP-adres.
+
+![created gateway] ( /deelopdracht05/owncloud/owncloud_files/created_gateway.png "gateway aangemaakt")
+
+
+####Certificaten aanmaken en toevoegen
+
+Doelstellingen:
+* een self-signed root-certificaat aanmaken en importeren in het managementportaal. Alleen self-signed certificates worden ondersteund!
+* voor elke client (hier: alleen DC) een clientcertificaat aanmaken o.b.v. dit rootcertificaat. Het clientcertificaat toevoegen aan de certificate store op de client.
+* het juiste Client VPN Package downloaden en uitvoeren op elke client (hier: alleen DC)
+
+Je hebt nodig:
+* de tool makecert.exe. Deze maakt deel uit van het pakket Visual Studio Tools, onderdeel van Visual Studio 2013 (gebruikt: de Ultimate-versie, de tools zitten ook in de gratis versie Express 2013 for Windows Desktop)
 
 Referenties:  
 * https://msdn.microsoft.com/en-us/library/azure/dn133792.aspx
