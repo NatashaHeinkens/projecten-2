@@ -15,6 +15,7 @@
 * `show ip route` (user EXEC of privileged EXEC: toont de routeringstabel
 * `show running-config` (privileged EXEC): toont volledige configuratie (zijn paswoorden geëncrypteerd, voor welke toegangen moet je inloggen, configuratie interfaces, static routes,...)  
    Let op! Als paswoorden niet geëncrypteerd zijn, zijn ze hier zichtbaar!
+* `show vlan brief` (privileged EXEC): toont overzicht van VLAN-informatie
    
 ###Algemene instellingen
 
