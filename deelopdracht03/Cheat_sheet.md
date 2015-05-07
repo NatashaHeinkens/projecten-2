@@ -19,7 +19,7 @@
    
 ###Algemene instellingen
 
-* `no ip domain-lookup` (privileged EXEC): zéér handig om te verhinderen dat het apparaat verkeerd ingegeven commando's (meer specifiek: alles dat geen keyword is) probeert om te zetten in een ip-adres
+* `no ip domain-lookup` (global config): zéér handig om te verhinderen dat het apparaat verkeerd ingegeven commando's (meer specifiek: alles dat geen keyword is) probeert om te zetten in een ip-adres
 * `enable secret xx` (global config): privileged EXEC beveiligen met een geëncrypteerd paswoord
 * `enable password xx` (global config): privileged EXEC 'beveiligen' met een **niet-geëncrypteerd** paswoord
 * `service password-encryption` (global config): niet-geëncrypteerde paswoorden in de configbestanden encrypteren (zorgt er **niet** voor dat paswoorden geëncrypteerd worden **verzonden** i.g.v. remote access)
