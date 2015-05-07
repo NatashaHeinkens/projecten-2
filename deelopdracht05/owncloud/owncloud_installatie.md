@@ -142,10 +142,33 @@ Als alles goed is, krijg je nu groen licht (Configuration OK). Gebruikersmenu re
 
 ##Owncloud met Azure VM
 
-
 ###Bitnami Azure Launchpad
 
-//TODO 
+Nodig:
+* een Microsoft Azure account
+* een Bitnami account: je kan hiervoor ook je Github-account gebruiken
+
+We moeten Bitnami eerst (eenmalig) toestemming geven om applicaties en VM's op te zetten in Microsoft Azure. Hiervoor moeten we een Management Certificate aanmaken en invoeren in de Bitnami-account.
+Daarna kunnen we de VM laten opzetten.
+
+1. Surf naar https://azure.bitnami.com/
+2. Klik in de lijst van toepassingen op Owncloud > Launch in account
+3. Log in op Bitnami (eventueel via Github)
+4. Volg de stappen op het scherm: Klik op `Create a management certificate for Microsoft Azure`  
+   Je wordt doorverwezen en moet inloggen op Azure om een .publishsettings-bestand te downloaden. Je moet ook een nieuw paswoord kiezen voor je Bitnami vault (waar certificaten e.d. voor de integratie Bitnami-Azure zitten opgeslagen, je kan er later ook een overzicht krijgen van je aangemaakte VM's).
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/bitnazure_stap1.png "managementcert azure")
+5. Configureer de aan te maken VM:
+   * Kies als regio **West Europe** (dit komt neer op een locatie in Nederland)
+   * Voor een test-/demo-omgeving kan je kiezen voor server size **A0** (traag maar goedkoop)
+6. Klik op `Create Virtual Machine` (of `Create`).  
+   Bitnami maakt nu VM en Storage account aan. Dit kan even duren. Bovenaan de pagina zie je de voortgang.
+   
+Noot: aanmaken en basisbeheer (opstarten, afsluiten, wissen) van je Bitnami VM's kan je vanaf nu via de Bitnami Vault doen. Inloggen op Bitnami via https://azure.bitnami.com/ en je Vault-paswoord ingeven.
+Je kan nu ook Bitnami images uitkiezen in Azure Management Portal > sectie 'Virtual Machines' > tab 'Images' > menu onderaan 'Browse VM Depot'
+
+Referenties:
+* https://wiki.bitnami.com/Azure_Cloud/Getting_Started 
+
  
 ###VPN lokaal netwerk - Azure
 
@@ -158,7 +181,7 @@ Azure Management Portal > kolom links `Networks` >
 #####Stap 1: Naam en locatie
 
 * **Name**: kies een naam (_AzureDevNetwerk_)
-* **Location**: kies `West Europe`. De locatie bepaalt waar VM's die deel uitmaken van het netwerk worden gehuisvest.  
+* **Location**: kies **West Europe**. De locatie bepaalt waar VM's die deel uitmaken van het netwerk worden gehuisvest.  
 Let op! Alleen VM's die aangemaakt zijn met **dezelfde regio** als het virtueel netwerk kunnen aan het netwerk toegevoegd worden!
 
 ![Vnet stap 1] ( /deelopdracht05/owncloud/owncloud_files/vnet_stap1.png "naam en locatie vnet" )  
@@ -215,6 +238,38 @@ Doelstellingen:
 
 Je hebt nodig:
 * de tool makecert.exe. Deze maakt deel uit van het pakket Visual Studio Tools, onderdeel van Visual Studio 2013 (gebruikt: de Ultimate-versie, de tools zitten ook in de gratis versie Express 2013 for Windows Desktop)
+
+#####Stap 1: Rootcertificaat aanmaken
+
+We maken een certificaat + private aan op een lokale computer, in de Certificate Store 'Personal'. We importeren het certificaat, zonder de private sleutel (.cer-bestand) in Azure.
+
+1. Open een command prompt **als administrator** en navigeer naar de plaats waar je het .cer-bestand wil opslaan.
+2. Geef het commando `makecert -sky exchange -r -n "CN=VPNAzureRootCertificate" -pe -a sha1 -len 2048 -ss My "VPNAzureRootCertificate.cer"`in, waarbij _VPNAzureRootCertificate_ een naam is die je zelf kiest. Als het lukt, krijg je simpelweg de boodschap `Succeeded`.
+3. Ga in Azure Management Portal naar het Dashboard van het Virtual Network (zie 'Virtueel netwerk aanmaken en bereikbaar maken') > tab 'Certificates'
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/cert_stap1.png "rootcert uploaden")
+4. Kies het .cer-bestand van het root-certificaat en bevestig.
+
+#####Stap 2: Clientcertificaat aanmaken
+
+We maken op dezelfde computer die we gebruikten voor het root-certificaat een client-certificaat aan. 
+Dit exporteren we (private key inclusief) naar een .pfx-bestand.
+Later importeren we het certificaat via het pfx-bestand op de client die verbinding moet maken met de Owncloud-server (dit is de DC-VM).
+
+1. Open een command prompt **als administrator**.
+2. Geef het commando `makecert.exe -n "CN=VPNAzureClient" -pe -sky exchange -m 96 -ss My -in "VPNAzureRootCertificate" -is my -a sha1` in
+   * de naam _VPNAzureClient_ is vrij te kiezen
+   * de naam achter de switch `-in` is de naam van het root-certificaat (niet het .cer-bestand!) uit Stap 1
+3. Als het gelukt is, krijg je weer de boodschap `Succeeded`
+4. Run `certmgr.msc` en vouw de store 'Personal' > 'Certificates' uit. Hier zie je zowel het root-certificaat als het client-certificaat dat je hebt aangemaakt.
+5. Rechtsklik op het client-certificaat > 'All tasks' > 'Export...' > Next
+6. De **private key** moet je mee exporteren.
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/cert_stap6.png "private key exporteren")
+7. In het scherm 'Export file format' kan je alles laten staan.
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/cert_stap7.png "clientcert bestandsformaat")
+8. In het volgende scherm moet je een paswoord opgeven voor de private key. Dit paswoord moet je bij het importeren op de VPN-client opnieuw ingeven.
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/cert_stap8.png "private key paswoord")
+9. Geef een bestandsnaam op voor het te exporteren bestand. Kies de locatie via 'Browse...' zodat je het later nog terugvindt. Klik op Finish.
+   
 
 Referenties:  
 * https://msdn.microsoft.com/en-us/library/azure/dn133792.aspx
