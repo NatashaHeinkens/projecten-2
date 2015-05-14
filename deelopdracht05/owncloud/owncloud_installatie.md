@@ -276,7 +276,7 @@ We importeren het aangemaakte clientcertificaat in de certificate store van DC (
 
 Nodig: het pfx-bestand uit Stap 2 op een locatie beschikbaar voor de guest (gedeelde map of usb)
 
-1. Dubbelklik op het pfx-bestand > Next > Next  
+1. Dubbelklik **in de guest VM** op het pfx-bestand > Next > Next  
    ![alt] (/deelopdracht05/owncloud/owncloud_files/certimport_stap1.png "Start importeren" )  
    ![alt] (/deelopdracht05/owncloud/owncloud_files/certimport_stap1b.png "Importeren - kies bestand" )
 2. Geef het paswoord in > Next  
@@ -290,7 +290,29 @@ Nodig: het pfx-bestand uit Stap 2 op een locatie beschikbaar voor de guest (gede
 
 #####Stap 4: VPN-verbinding maken
 
-1.
+We downloaden het pakket voor de VPN-verbinding met het virtuele netwerk van de Azure Management Portal. We voeren dit uit op DC (guest VM).
+
+1. Log in op de Azure Management Portal > tab Networks > Klik op het virtuele netwerk in de lijst.  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/vpnconnect_stap1.png "vpn-verbinding stap 1" )
+2. Ga naar het Dashboard van dit netwerk > Download the 64-bit Client VPN Package.  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/vpnconnect_stap2.png "vpn-verbinding stap 2" )
+3. Sla dit bestand (.exe) op op een locatie die beschikbaar is in de guest VM (shared folder of usb).
+4. Dubbelklik **in de guest VM** op het bestand. Je krijgt een beveiligingswaarschuwing.  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/vpnconnect_stap4.png "vpn-verbinding stap 4" )
+5. Bevestig de installatie van de VPN-client.   
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/vpnconnect_stap5.png "vpn-verbinding stap 5" )
+6. Open Network Connections (Rechtsklik op de Windowsknop > Network Connections).  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/vpnconnect_stap6.png "vpn-verbinding stap 6" )
+7. Dubbelklik op de VPN-verbinding.   
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/vpnconnect_stap7.png "vpn-verbinding stap 7" )
+8. Klik op de naam van het VPN en Connect.  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/vpnconnect_stap8.png "vpn-verbinding stap 8" )
+9. Klik nog eens op Connect.  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/vpnconnect_stap9.png "vpn-verbinding stap 9" )
+10. Geef toestemming om door te gaan.  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/vpnconnect_stap10.png "vpn-verbinding stap 10" )
+   In Network Connections kan je zien of de verbinding actief is:
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/vpnconnect_success.png "vpn-verbinding succes" )
 
 Referenties:  
 * https://msdn.microsoft.com/en-us/library/azure/dn133792.aspx
