@@ -31,63 +31,36 @@
 
 ### Kanban-bord
 
-![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/huboard_do2.png "kanban")
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/screenshots/huboard_do2.png "kanban")
 
 ### Tijdbesteding
 
 #### Taak 1: 3x Testplan opstellen: LAMP, JavaEE, WISA
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
-| Natasha Heinkens |  2 uur 30 min              |              |
+| Natasha Heinkens |  2u 30 min              | 2u 42min             |
 | Hans Meuris | 1 uur  |  35 min |
-(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/screenshots/testplan.jpg "testplan")
 
 #### Taak 2a: Opzetten en configureren van LAMP stack- Implementeren
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
-| Robbe Van Daele |       2u    |        3u15  |
+| Robbe Van Daele |      3u    |        6u  |
 | Hans Meuris | 6 uur  |  4 uur  |
-(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
-
-#### Taak 2b: Opzetten en configureren van LAMP stack- Security
-| Student  | Geschat | Gerealiseerd |
-| :---     |    ---: |         ---: |
-| Robbe Van Daele |       1u      |     1u       |
-(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/screenshots/lampimpl.jpg "lamp")
 
 #### Taak 3a: Opzetten en configureren van JavaEE Stack- Implementeren
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Robbe Van Daele |       5u    |     6u29    |
 | Hans Meuris | 6 uur  |  4 uur 45 min  |
-(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
-
-#### Taak 3b: Opzetten en configureren van JavaEE Stack- Security
-| Student  | Geschat | Gerealiseerd |
-| :---     |    ---: |         ---: |
-| Robbe Van Daele |       4u      |      5u      |
-(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
+![alt] (https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht02/screenshots/javaeeimpl.jpg "javaee")
 
 #### Taak 4a: Opzetten en configureren van WISA Stack- Implementeren
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Natasha Heinkens |     20 uur           |              |
 | Birgitta Croux |     20 uur          |       15 uur       |
-(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
-
-#### Taak 4b: Opzetten en configureren van WISA Stack- Security
-| Student  | Geschat | Gerealiseerd |
-| :---     |    ---: |         ---: |
-| Natasha Heinkens |      10 uur          |              |
-| Birgitta Croux |      5 uur         |     1 uur        |
-(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
-
-#### Taak 5: 3x productieomgeving opzetten: LAMP, JavaEE, WISA
-| Student  | Geschat | Gerealiseerd |
-| :---     |    ---: |         ---: |
-| Natasha Heinkens |      5 uur          |              |
-| Robbe Van Daele |       2u      |        3u    |
-| Birgitta Croux |       9 uur        |       5 uur       |
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
 #### Taak 6: 3x handleiding voor de gebruiker
