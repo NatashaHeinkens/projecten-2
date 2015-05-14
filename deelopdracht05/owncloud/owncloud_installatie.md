@@ -266,10 +266,31 @@ Later importeren we het certificaat via het pfx-bestand op de client die verbind
    ![alt] (/deelopdracht05/owncloud/owncloud_files/cert_stap6.png "private key exporteren")
 7. In het scherm 'Export file format' kan je alles laten staan.
    ![alt] (/deelopdracht05/owncloud/owncloud_files/cert_stap7.png "clientcert bestandsformaat")
-8. In het volgende scherm moet je een paswoord opgeven voor de private key. Dit paswoord moet je bij het importeren op de VPN-client opnieuw ingeven.
+8. In het volgende scherm moet je een paswoord opgeven voor de private key. Dit paswoord moet je bij het importeren op de VPN-client opnieuw ingeven dus hou het bij.  
    ![alt] (/deelopdracht05/owncloud/owncloud_files/cert_stap8.png "private key paswoord")
 9. Geef een bestandsnaam op voor het te exporteren bestand. Kies de locatie via 'Browse...' zodat je het later nog terugvindt. Klik op Finish.
-   
+
+#####Stap 3: Clientcertificaat importeren op de domeincontroller
+
+We importeren het aangemaakte clientcertificaat in de certificate store van DC (guest VM).
+
+Nodig: het pfx-bestand uit Stap 2 op een locatie beschikbaar voor de guest (gedeelde map of usb)
+
+1. Dubbelklik op het pfx-bestand > Next > Next  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/certimport_stap1.png "Start importeren" )  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/certimport_stap1b.png "Importeren - kies bestand" )
+2. Geef het paswoord in > Next  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/certimport_stap2.png "Importeren - paswoord" )
+3. Laat de certificate store automatisch kiezen > Next  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/certimport_stap3.png "Importeren - certificate store")
+4. Klik op Finish  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/certimport_stap4.png "Importeren - eindoverzicht" )
+   Je krijgt een melding:  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/certimport_success.png "Importeren succesvol" )
+
+#####Stap 4: VPN-verbinding maken
+
+1.
 
 Referenties:  
 * https://msdn.microsoft.com/en-us/library/azure/dn133792.aspx
