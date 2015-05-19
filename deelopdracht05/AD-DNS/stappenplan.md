@@ -5,5 +5,9 @@
 
 ##Stappenplan
 
-1. Start de server op.
-2.
+**1.** Start de server op.  
+**2.** Ga naar serverbeheer (start normaal automatisch on-boot, maar zo niet: start menu - server manager).  
+**3.** Kies voor "Add roles and features".  
+**4.** In het venster "Add roles and features wizard", selecteer 'Active Directory: Domain Services' en 'DNS Server'.  
+**5.** Klik op Next en laat de server de rollen installeren.  
+**6.** Terug in serverbeheer, 
