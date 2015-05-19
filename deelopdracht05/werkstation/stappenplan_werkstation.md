@@ -1,6 +1,6 @@
 # Stappenplan opzetten Werkstation
 
-## Prerequisits
+## Prerequisites
   * Windows installatie iso bestand (Windows 8)
   * Virtual box 4.3.26
 
