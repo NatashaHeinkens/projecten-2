@@ -1,4 +1,8 @@
-Heel kort, ter referentie voor jullie in Gent, alle stappen in Packet Tracer
+#Deelopdracht 06: simulatie in Packet Tracer
+
+uitvoerder: Birgit Croux
+
+Het [pkt-bestand] (/deelopdracht06/lab5137_files/lab5137_pt.pkt) van deze oefening.
 
 ##Deel 1
 
@@ -24,9 +28,9 @@ Switches
 ```
 enable
 show flash
-##Als vlan.dat voorkomt in de weergave van het flash-geheugen:
+!!Als vlan.dat voorkomt in de weergave van het flash-geheugen:
 delete vlan.dat
-##
+!!
 erase startup-config
 reload
 ```
@@ -35,10 +39,12 @@ reload
 
 Switches
 ```
-##global config binnengaan
+!!global config binnengaan
 no ip domain-lookup
 
-hostname S1 || S2
+!! voor S2: hostname S2
+hostname S1
+!!
 enable secret class
 
 line con 0
@@ -49,18 +55,25 @@ logging synchronous
 line vty 0 4 
 password cisco
 
-interface vlan 1
-ip address 192.168.1.11 255.255.255.0 || S2: 192.168.1.12
-no shutdown
 exit
 
 ip def 192.168.1.1
-interface range fa0/2-4 || S2: fa0/2-17
+!!voor S2: fa0/2-17
+interface range fa0/2-4
+!!
 shutdown
-interface range fa0/7-24 || S2: fa0/19/24
+!!voor S2: fa0/19-24
+interface range fa0/7-24
+!!
 shutdown
 interface range g0/1-2
 shutdown
+
+interface vlan 1
+!!voor S2: 192.168.1.12
+ip address 192.168.1.11 255.255.255.0
+!!
+no shutdown
 
 exit
 service password-encryption
@@ -209,6 +222,47 @@ R1(config-if)#
 
 ###Stap 5
 
+Routeringstabel tonen
+```
+R1#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+     192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.1.0/24 is directly connected, GigabitEthernet0/1.1
+L       192.168.1.1/32 is directly connected, GigabitEthernet0/1.1
+     192.168.10.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.10.0/24 is directly connected, GigabitEthernet0/1.10
+L       192.168.10.1/32 is directly connected, GigabitEthernet0/1.10
+     192.168.20.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.20.0/24 is directly connected, GigabitEthernet0/1.20
+L       192.168.20.1/32 is directly connected, GigabitEthernet0/1.20
+     209.165.200.0/24 is variably subnetted, 2 subnets, 2 masks
+C       209.165.200.224/27 is directly connected, Loopback0
+L       209.165.200.225/32 is directly connected, Loopback0
+R1#
 ```
 
-```
+Ping naar default gateway
+
+![alt] (/deelopdracht06/lab5137_files/pt_ping_A-R10.png "ping naar default gateway")
+
+Ping naar PC-B
+
+![alt] (/deelopdracht06/lab5137_files/pt_ping_A-B.png "ping naar PC-B")
+
+Ping naar Lo0
+
+![alt] (/deelopdracht06/lab5137_files/pt_ping_A-L0.png "ping naar loopback interface router")
+
+Ping naar S2
+
+![alt] (/deelopdracht06/lab5137_files/pt_ping_A-S2.png "ping naar S2")
+
