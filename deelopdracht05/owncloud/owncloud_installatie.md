@@ -370,4 +370,8 @@ Nu kan je surfen naar de dns-naam van de owncloud server (terug te vinden in Das
 #####Stap 4: Owncloud configureren voor LDAP
 
 1. Configureer de DC voor owncloud zoals hierboven beschreven ('Gebruikers en groepen voor owncloud in AD')
-2. Surf naar de DNS-naam van de owncloud-VM. Volg de verdere stappen in 'Owncloud configureren' hierboven.
+2. Maak een VPN-verbinding met het Azure Virtual Network (vanaf Stap 4 - punt 6 in 'Certificaten aanmaken en toevoegen' hierboven)
+3. Surf naar de DNS-naam van de owncloud-VM. Volg de verdere stappen in 'Owncloud configureren' hierboven.  
+   **Let op: hostnaam** op tabblad server is nu **het ip van de DC in de VPN-verbinding**  
+   Je vindt dit hier (op DC): Network Connections > VPN aanklikken > View Status of this connection > Details  
+   ![alt] (deelopdracht05/owncloud/owncloud_files/owncloud-vpn-ldap.png "IP-adres binnen vnet")
