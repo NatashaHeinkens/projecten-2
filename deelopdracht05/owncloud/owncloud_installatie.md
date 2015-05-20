@@ -142,7 +142,9 @@ Als alles goed is, krijg je nu groen licht (Configuration OK). Gebruikersmenu re
 
 ##Owncloud met Azure VM
 
-###Bitnami Azure Launchpad
+###1. Bitnami Azure Launchpad
+
+We maken eerst een owncloud-VM aan. De Bitnami-VM's kunnen niet van bij de start toegevoegd worden aan een virtueel netwerk. Daarom is er straks nog een extra stap nodig nadat we het vnet hebben aangemaakt (zie 3. Bitnami VM toevoegen aan virtueel netwerk).
 
 Nodig:
 * een Microsoft Azure account
@@ -155,22 +157,23 @@ Daarna kunnen we de VM laten opzetten.
 2. Klik in de lijst van toepassingen op Owncloud > Launch in account
 3. Log in op Bitnami (eventueel via Github)
 4. Volg de stappen op het scherm: Klik op `Create a management certificate for Microsoft Azure`  
-   Je wordt doorverwezen en moet inloggen op Azure om een .publishsettings-bestand te downloaden. Je moet ook een nieuw paswoord kiezen voor je Bitnami vault (waar certificaten e.d. voor de integratie Bitnami-Azure zitten opgeslagen, je kan er later ook een overzicht krijgen van je aangemaakte VM's).
+   Je wordt doorverwezen en moet inloggen op Azure om een .publishsettings-bestand te downloaden. **Belangrijk!** Je moet ook een nieuw paswoord kiezen voor je Bitnami vault (waar certificaten e.d. voor de integratie Bitnami-Azure zitten opgeslagen, je kan er later ook een overzicht krijgen van je aangemaakte VM's). Kies een sterk paswoord en hou het goed bij!
    ![alt] (/deelopdracht05/owncloud/owncloud_files/bitnazure_stap1.png "managementcert azure")
 5. Configureer de aan te maken VM:
    * Kies als regio **West Europe** (dit komt neer op een locatie in Nederland)
    * Voor een test-/demo-omgeving kan je kiezen voor server size **A0** (traag maar goedkoop)
 6. Klik op `Create Virtual Machine` (of `Create`).  
    Bitnami maakt nu VM en Storage account aan. Dit kan even duren. Bovenaan de pagina zie je de voortgang.
-   
+7. Je krijgt een overzicht van de Aangemaakte virtuele machine. **Belangrijk!** In het vak Server info staan de SSH-credentials. Hou deze goed bij! (Later wissen we de VM en is deze informatie **niet** meer beschikbaar via de Launchpad!)
+
+
 Noot: aanmaken en basisbeheer (opstarten, afsluiten, wissen) van je Bitnami VM's kan je vanaf nu via de Bitnami Vault doen. Inloggen op Bitnami via https://azure.bitnami.com/ en je Vault-paswoord ingeven.
 Je kan nu ook Bitnami images uitkiezen in Azure Management Portal > sectie 'Virtual Machines' > tab 'Images' > menu onderaan 'Browse VM Depot'
 
 Referenties:
-* https://wiki.bitnami.com/Azure_Cloud/Getting_Started 
-
+* https://wiki.bitnami.com/Azure_Cloud/Getting_Started
  
-###VPN lokaal netwerk - Azure
+###2. VPN lokaal netwerk - Azure VM
 
 ####Azure: Virtueel netwerk aanmaken en bereikbaar maken
 
@@ -318,8 +321,53 @@ Referenties:
 * https://msdn.microsoft.com/en-us/library/azure/dn133792.aspx
 * https://msdn.microsoft.com/en-us/library/azure/09926218-92ab-4f43-aa99-83ab4d355555#BKMK_VNETDNS
 
+ 
+###3. Bitnami VM toevoegen aan virtueel netwerk en verbinding maken
 
+We wissen eerst de VM **met behoud van de storage** voor deze VM. Daarna maken we een nieuwe VM aan, die we tijdens het creatieproces toevoegen aan het vnet.
 
+#####Stap 1: VM wissen, nieuwe VM aanmaken
 
+1. Ga in de Azure Management Portal naar de tab Virtual Machines. Selecteer de owncloud-VM en klik onderaan op 'Delete'. **Kies de optie 'Keep the attached disks'.**  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/addvmtovnet_stap1.png "VM verwijderen")
+2. Klik onderaan op '+New'. Kies Compute > Virtual Machine > From gallery  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/addvmtovnet_stap2.png "Nieuwe VM: From Gallery")
+3. Kies in de lijst links voor 'My disks'. De storage account van de verwijderde VM staat in de lijst.  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/addvmtovnet_stap3.png "Kies disk")
+4. Kies een naam voor de VM. Kies (voor een test-VM) Tier 'Basic'.  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/addvmtovnet_stap4.png "Naam en basic tier")
+5. Laat 'Create a new cloud service' staan. De naam van de cloud service is dezelfde als die van de VM en mag ook blijven staan. **Belangrijk!** Bij Region/Affinity Group/Virtual Network moet de naam van het virtueel netwerk (zie 2.) geselecteerd zijn (normaal staat dit voorgeselecteerd, anders selecteer je deze nu). We hebben maar 1 subnet aangemaakt dus je kan er geen ander kiezen.  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/addvmtovnet_stap5.png "Voeg toe aan vnet!")
+6. Laat het volgende scherm ongewijzigd.
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/addvmtovnet_stap6.png "agent")
 
+Resultaat: een nieuwe VM + de OS disk van de oude VM + lid van het vnet.  
 
+We hebben nog geen endpoints voor http/https aangemaakt voor deze VM dus je kan er nog niet naar surfen. Je kan wel inloggen via SSH (vanuit Windows gebruik je PuTTY, KiTTY,...). Hiervoor heb je de l/p nodig uit 1. Bitnami Azure Launchpad.
+
+#####Stap 2: HTTPS instellen en afdwingen
+
+We moeten er voor zorgen dat onze gebruikersgegevens en data niet over een onbeveiligde verbinding worden verzonden. Daarom zorgen we ervoor dat de server alleen toegankelijk is via HTTPS.
+
+De handleiding om dit te doen vind je [hier] (/deelopdracht05/owncloud/ssl.md).
+
+#####Stap 3: Endpoint openstellen voor webtoegang
+
+Zolang we geen endpoints openstellen voor onze Azure VM, is hij niet van buitenaf bereikbaar.
+
+1. Log in op de Azure Management Portal en ga naar het dashboard van de owncloud-VM > tab Endpoints > +Add  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/azure-endpoint_stap1.png "Endpoint aanmaken")
+2. Kies voor een Stand-alone endpoint:  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/azure-endpoint_stap2.png "Stand-alone endpoint")
+3. Kies HTTP uit de drop-down list:  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/azure-endpoint_stap3.png "HTTP")
+4. Herhaal stappen 1 en 2. Kies bij stap 3 deze keer voor HTTPS.  
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/azure-endpoint_stap4.png "HTTPS")
+
+Nu kan je surfen naar de dns-naam van de owncloud server (terug te vinden in Dashboard van de VM). In ons voorbeeld: ops007.cloudapp.net. **Maar**: we hebben met een self-signed certificate gewerkt. De Certificate Authority die dit certificaat heeft getekend staat dus niet in de lijst van CA's die je browser kent. De browser zal dus een beveiligingswaarschuwing geven. Bevestig om door te gaan naar de loginpagina.    
+![alt] (/deelopdracht05/owncloud/owncloud_files/azure-endpoint_stap5.png "Privacy Error")
+
+#####Stap 4: Owncloud configureren voor LDAP
+
+1. Configureer de DC voor owncloud zoals hierboven beschreven ('Gebruikers en groepen voor owncloud in AD')
+2. Surf naar de DNS-naam van de owncloud-VM. Volg de verdere stappen in 'Owncloud configureren' hierboven.
