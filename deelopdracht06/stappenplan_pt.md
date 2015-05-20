@@ -1,7 +1,5 @@
 #Deelopdracht 06: simulatie in Packet Tracer
 
-uitvoerder: Birgit Croux
-
 Het [pkt-bestand] (/deelopdracht06/lab5137_files/lab5137_pt.pkt) van deze oefening.
 
 ##Deel 1
