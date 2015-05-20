@@ -19,12 +19,14 @@ Ook ons Kanbanbord moest wat gestroomlijnd en beter gecoördineerd worden. We ma
 
 #2.	Individuele restrospectieve
 
-a.	Birgitta Croux  
+##a.	Birgitta Croux  
 
-Scrum is een organisatiemethode die sterk inzet op persoonlijke, face-to-face contacten. Ik denk dat dagelijkse stand-upmeetings en fysiek dichter bij mekaar werken de teamwerking inderdaad zouden vergemakkelijken. Je leert elkaar beter kennen en de werkwijze van je teamgenoten beter inschatten. Het is ook gemakkelijker om snel op elkaars werk in te spelen. Het duurde dan ook even vooraleer onze teamwerking begon te vlotten. Na wat meer persoonlijk contact en samenkomsten heeft deze situatie zichzelf opgelost.
-De afstand was ook de reden voor onze planning en afspraken voor de meer projectmatige opdrachten (zoals opdracht 2 en opdracht 5). We verdeelden de taken in vrij grote blokken, bijvoorbeeld 1 VM per persoon, om het gemakkelijker te maken om zelfstandig te werken. Gecombineerd met regelmatige updates van GitHub was dit voor mij zeker een goede oplossing voor het probleem.
+Scrum is een organisatiemethode die sterk inzet op persoonlijke, face-to-face contacten. Ik denk dat dagelijkse stand-upmeetings en fysiek dichter bij mekaar werken de teamwerking inderdaad zouden vergemakkelijken. Je leert elkaar beter kennen en de werkwijze van je teamgenoten beter inschatten. Het is ook gemakkelijker om snel op elkaars werk in te spelen. Het duurde dan ook even vooraleer onze teamwerking begon te vlotten. Na wat meer persoonlijk contact en samenkomsten heeft deze situatie zichzelf opgelost.  
+
+De afstand was ook de reden voor onze planning en afspraken voor de meer projectmatige opdrachten (zoals opdracht 2 en opdracht 5). We verdeelden de taken in vrij grote blokken, bijvoorbeeld 1 VM per persoon, om het gemakkelijker te maken om zelfstandig te werken. Gecombineerd met regelmatige updates van GitHub was dit voor mij zeker een goede oplossing voor het probleem.  
+
 De relatief korte tijdsspanne waarin we deze grote opdrachten moesten afwerken, zorgde er soms voor dat we naar mijn gevoel niet van bij het begin grondig te werk konden gaan. Bij sommige onderdelen was het niet onmiddellijk duidelijk of een bestudeerde en gekozen oplossing ook zou werken. Daardoor namen troubleshooten en verschillende oplossingen testen veel tijd in beslag. Ik heb hieruit geleerd om sneller dingen uit te proberen. Eens je een basisinzicht hebt in de werking van een technologie, moet je er gewoon mee aan de slag. Je mag er van uitgaan dat je problemen zal tegenkomen, maar je moet er op vertrouwen dat je de oplossing wel zal vinden.
 
-b.	Hans Meuris
-c.	Natasha Heinkens
-d.	Robbe Van Daele
+##b.	Hans Meuris
+##c.	Natasha Heinkens
+##d.	Robbe Van Daele
