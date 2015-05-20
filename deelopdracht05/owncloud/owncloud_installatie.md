@@ -374,4 +374,4 @@ Nu kan je surfen naar de dns-naam van de owncloud server (terug te vinden in Das
 3. Surf naar de DNS-naam van de owncloud-VM. Volg de verdere stappen in 'Owncloud configureren' hierboven.  
    **Let op: hostnaam** op tabblad server is nu **het ip van de DC in de VPN-verbinding**  
    Je vindt dit hier (op DC): Network Connections > VPN aanklikken > View Status of this connection > Details  
-   ![alt] (deelopdracht05/owncloud/owncloud_files/owncloud-vpn-ldap.png "IP-adres binnen vnet")
+   ![alt] (/deelopdracht05/owncloud/owncloud_files/owncloud-vpn-ldap.png "IP-adres binnen vnet")
