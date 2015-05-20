@@ -5,7 +5,7 @@ Deelopdracht 2 bleek een grote struikelblok te zijn, desondanks de goede start b
 
 We kregen ook te maken met technische problemen (o.a. Hans zijn Ansible werkte niet) deze werden ook vermeld in ons rapport. Na een aantal weken waren sommige problemen nog niet opgelost waardoor we achterop geraakt waren.
 We kregen 4 werkpunten: “Team”, “Communicatie”, “Planning” en Afspraken”/”Documentatie”.
-Deze hadden we zelf gekozen nadat we merkten dat de communicatie niet altijd even vlot verliet. Binnenin het team pasten we de waterval methode toe waardoor we soms dubbel werk verrichtte omdat we van elkaar niet wisten wie aan wat bezig was.  Samen met mevrouw De Donder hebben we de afspraken omtrent het gebruik van het kanban bord overlopen om het grbruik ervan te optimaliseren. Ook kregen we de opmerking om de github up to date te houden en de taken beter te verdelen.
+Deze hadden we zelf gekozen nadat we merkten dat de communicatie niet altijd even vlot verliet. Binnenin het team pasten we de waterval methode toe waardoor we soms dubbel werk verrichtte omdat we van elkaar niet wisten wie aan wat bezig was.  Samen met mevrouw De Donder hebben we de afspraken omtrent het gebruik van het kanban bord overlopen om het gebruik ervan te optimaliseren. Ook kregen we de opmerking om de github up to date te houden en de taken beter te verdelen.
 
 **Hoe hebben we de optimalisatie ivm. de opgelegde werkpunten bereikt?**
 
