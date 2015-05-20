@@ -1,4 +1,4 @@
-##Stappenplan Labo 3##
+##Stappenplan Deelopdracht 6##
 
 ###Part 1###
 
@@ -10,8 +10,6 @@ Follow the instructions in the lab document.
 * Go to network settings, set ip4 address to manual and set addresses, netmasks and default gateways as provided.
 
 ####step 3####
-
-mdix auto
 
 #####Router#####
 When asked for confirmation, hit the “enter” key.
@@ -55,21 +53,27 @@ service password-encryption
 
 * After this for switch 1, enter the following:
 ```
-interface vlan1ip address 192.168.1.11 255.255.255.0ip default-gateway 192.168.1.1
+interface vlan1
+ip address 192.168.1.11 255.255.255.0
+ip default-gateway 192.168.1.1
 interface range fa0/2 - 4
 shut
 interface range fa0/7 - 24
-shutexit
+shut
+exit
 hostname S1
 exit
 ```
 * For switch 2, instead enter this:
 ```
-interface vlan1ip address 192.168.1.12 255.255.255.0ip default-gateway 192.168.1.1
+interface vlan1
+ip address 192.168.1.12 255.255.255.0
+ip default-gateway 192.168.1.1
 interface range fa0/2 - 17
 shut
 interface range fa0/19 - 24
-shutexit
+shut
+exit
 hostname S2
 exit
 ```
@@ -93,7 +97,8 @@ line vty 0 4
 password cisco
 login
 logging synchronous
-interface loopback0ip address 209.165.200.225 255.255.255.224
+interface loopback0
+ip address 209.165.200.225 255.255.255.224
 exit
 copy running-config startup-config
 ```
@@ -104,11 +109,13 @@ copy running-config startup-config
 
 * Connect the console cable with S1 and enter the console emulator and enter the configure terminal.
 ```
-vlan 10name Students
+vlan 10
+name Students
 vlan 20
 name Faculty
 interface f0/1
 switchport mode trunk
+mdix auto
 no shut
 interface f0/5
 switchport mode trunk
@@ -119,12 +126,14 @@ no shut
 switchport access vlan 10
 end
 ```
+* Note: we include the command `mdix auto` in case you use a normal network calbe instead of a crossover and the switch does not automatically adapt.
 
 ####step 2####
 
 * Connect the console cable with S1 and enter the console emulator and enter the configure terminal.
 ```
-vlan 10name Students
+vlan 10
+name Students
 vlan 20
 name Faculty
 interface f0/1
@@ -133,7 +142,8 @@ no shut
 interface f0/18
 switchport mode trunk
 no shut
-switchport access vlan 20end
+switchport access vlan 20
+end
 ```
 
 ###Part 3###
@@ -145,28 +155,32 @@ The following steps can all be done right after each other.
 ####Step 1####
 
 ```
-interface g0/1.1encapsulation dot1Q 1 
+interface g0/1.1
+encapsulation dot1Q 1 
 ip address 192.168.1.1 255.255.255.0 
 ```
 
 ####Step 2####
 
 ```
-interface g0/1.10encapsulation dot1Q 10 
+interface g0/1.10
+encapsulation dot1Q 10 
 ip address 192.168.10.1 255.255.255.0 
 ```
 
 ####Step 3####
 
 ```
-interface g0/1.20encapsulation dot1Q 20 
+interface g0/1.20
+encapsulation dot1Q 20 
 ip address 192.168.20.1 255.255.255.0 
 ```
 
 ####Step 4####
 
 ```
-interface g0/1no shut
+interface g0/1
+no shut
 ```
 
 ####Step 5####
