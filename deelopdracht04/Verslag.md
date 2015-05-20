@@ -6,10 +6,25 @@ Onze opdracht luidde als volgt: Zet alle servers terug op binnen de 5 uur gebrui
 Aangezien we met 3 personen aanwezig waren hebben we besloten om elk een server op te zetten. Robbe zette de Java EE op, Hans de WISA en Natasha de LAMP.
 
 ## WISA
+
+[Verslag] (/deelopdracht04/rapport_Wisa.md) van uitvoerder Hans Meuris.
+
 ### Conclusie WISA
+
+[Reflectie] (/deelopdracht04/reflectie_disrec_winserver.md) van Birgit Croux.
+
+
 ## Java EE
+
+
 ### Conclusie Java EE
+
+
+
 ## LAMP
+
+Verslag en reflectie van uitvoerder Natasha Heinkens.
+
 Om de LAMP op te zetten ging ik als volgt te werk: de github repository werd erbij gehaald, in specifiek het stappenplan van LAMP en de box die standaard op de server beschikbaar is.
 Aangezien de opdracht van deelopdracht 2 in hield dat we de serves geautomatiseerd moesten opzetten was het stappenplan daar ook naar gemaakt.
 De box verkrijgen en toevoegen aan virtual box bleek geen probleem te zijn. Echter bij het opstarten van de box via vagrant liep het mis. Het lukte niet om Ansible aan de praat te krijgen.
