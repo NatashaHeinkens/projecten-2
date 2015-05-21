@@ -28,5 +28,15 @@ De afstand was ook de reden voor onze planning en afspraken voor de meer project
 De relatief korte tijdsspanne waarin we deze grote opdrachten moesten afwerken, zorgde er soms voor dat we naar mijn gevoel niet van bij het begin grondig te werk konden gaan. Bij sommige onderdelen was het niet onmiddellijk duidelijk of een bestudeerde en gekozen oplossing ook zou werken. Daardoor namen troubleshooten en verschillende oplossingen testen veel tijd in beslag. Ik heb hieruit geleerd om sneller dingen uit te proberen. Eens je een basisinzicht hebt in de werking van een technologie, moet je er gewoon mee aan de slag. Je mag er van uitgaan dat je problemen zal tegenkomen, maar je moet er op vertrouwen dat je de oplossing wel zal vinden.
 
 ##b.	Hans Meuris
-##c.	Natasha Heinkens
+##c.	Natasha Heinkens  
+
+Het contact binnen het team is altijd civil gebleven,  er waren geen conflicten en er werd nooit met de vinger gewezen naar een individueel persoon.  Dit zorgde voor een aantal positieve punten; men was niet bang om zaken aan elkaar te vragen, men voelde zich goed en had geen stress in de groep, ieden er gecommuniceerd werd verliep dit ook vlot. Met positieve aspecten komen er ook negatieve; geen stress tijdens het werd betekend ook dat er geen drijfveer is, geen duwende kracht die een duwtje geeft om sneller te werken als men in tijdsnood bevindt. Er heerste geen druk in de groep waardoor bepaalde taken links gelaten werden.
+Een betere opvolging was nodig en met behulp van het kanban bord zou dit geholpen hebben, maar het kanban bord werd nie zo nauw opgevolgd door zowel teamleden als scrum master. We kregen dit als werkpunt mee en hebben in de loop van van het project het kanban bord beter en sneller aangevuld m.b.v. de ingebouwde functionaliteiten (o.a. labels, ‘block’, ‘ready for next stage’).  
+
+Een ander werkpunt dat we meekregen was het up to date houden van de Github repository, zodat iedereen aan de nodige bestanden kan. Hoewel hiervan op de hoogte te zijn bleven sommige documenten enkel lokaal beschikbaar om pas, indien afgewerkt, op de Github repository gezet.
+Dit kwam vooral omdat men streefde naar volledigheid en geen losse flarden op de Github wou zien.  
+
+Soms was de motivatie wat minder omdat men soms niet wist als we wel in de juiste richting gingen. Deelopdracht 2 was een grote uitdaging doordat we weinig achtergrond hadden in het topic. Men research komt er gepruts en met gepruts komen er failures. Vaak was men niet zeker als we wel juist bezig waren en of het wel genoeg was. Acceptatiecriteria als “Beveiliging” bleken een heel moeilijk punt te zijn. Beveiliging op zich is geen gemakkelijk gegeven en onbekend, met het opzetten van een veilige omgeving zijnde , sukkelden we hiermee voor een tijdje.
+We zochten het soms te ver in 1 deelcategorie waardoor men de moed verloor en we bleven steken. Gedurende het project zijn we sneller afgestapt op het idee om ons te focussen en specialiseren op 1 punt en gewoon verder te doen om het gevraagde te leveren.
+
 ##d.	Robbe Van Daele
