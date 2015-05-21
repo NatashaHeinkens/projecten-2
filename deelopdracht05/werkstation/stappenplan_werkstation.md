@@ -1,12 +1,12 @@
 # Stappenplan opzetten Werkstation
 
 ## Prerequisites
-  * Windows installatie iso bestand (Windows 8)
+  * Windows installatie iso bestand (Windows 8.1)
   * Virtual box 4.3.26
 
 ## Stappenplan
 
-**Stap 1.** Open Virtualbox en maak een nieuwe machine aan. Voer een naam in (naar keuze), type: 'Microsoft Windows' en version: 'Windows 8 (64bit)'.  
+**Stap 1.** Open Virtualbox en maak een nieuwe machine aan. Voer een naam in (naar keuze), type: 'Microsoft Windows' en version: 'Windows 8.1 (64bit)'.  
 Opmerking: Indien het systeem waarop je werkt geen 64 bit is moet je bij version 32 bit selecteren.  
 ![alt](https://github.com/HoGentTIN/ops-g-07/blob/master/deelopdracht05/werkstation/screenshots/stap1.jpg "stap1")  
 
